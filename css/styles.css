@@ -1,0 +1,143 @@
+body{
+    margin:0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:#40514E;
+    font-size: 23px;
+}
+h1{
+    font-size:562.5%;
+    color:blue;
+    line-height: 2;
+    margin:50px auto 0px auto;
+    text-align:center;
+    font-family: 'Rochester', cursive;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin:0px;
+}
+hr{
+    margin:0px;
+    border:none;
+}
+p{
+    margin:0
+}
+div{
+    margin:0;
+    padding:0;
+}
+.Hello{
+    color:blue;
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+#intro{
+    line-height:2;
+    margin:10px auto 10px auto;
+    font-weight: bold;
+    font-size:1.25em;
+}
+.Top{
+    background-color:#CFF5E7;
+    height:33%;
+    width:100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.middle-container{
+    background-color:#A0E4CB;
+    text-align: center;
+    padding: 10px;
+}
+.bottom-container{
+    background-color:#59C1BD;
+    position:relative;
+    text-align: center;
+    padding: 10px;
+}
+.top_cloud{
+    position:absolute;
+    top:30px;
+    right:400px;
+
+}
+.bottom_cloud{
+    position: absolute;
+}
+.me{
+    width: 15vw;
+    height:15vw;
+}
+.skill-header{
+    margin:50px auto 50px auto;
+}
+.skill-row{
+    width:50%;
+    margin:0 auto 0px auto;
+    padding-bottom: 3%;
+    text-align: left;
+    line-height: 2;
+}   
+.skill-image{
+    width:15%;
+    float:left;
+    padding-right: 30px;
+}
+
+#nessus_logo{
+    width:15%;
+    margin-top: 2vw;
+    padding-bottom:5vw;
+}
+
+.dots{
+    border:none;
+    border-top:5px dotted #EAF6F6;
+    width:10%;
+    margin:50px auto 50px auto;
+}
+.btn {
+    background: #3498db;
+    display:inline-block;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 1px 2px 1px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin:20px auto 20px auto;
+}
+  
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #34d9b8);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #34d9b8);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #34d9b8);
+    background-image: -o-linear-gradient(top, #3cb0fd, #34d9b8);
+    background-image: linear-gradient(to bottom, #3cb0fd, #34d9b8);
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+}
+.popup{
+    width:65px;
+    height:65px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.popup:hover{
+    width:80px;
+    height:80px;
+}
+.footer-link{
+    text-decoration: none;
+}
