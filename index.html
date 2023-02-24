@@ -3,71 +3,221 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="manifest" href="./site.webmanifest">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Rochester&family=Six+Caps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <title>Shun Ren</title>
     </head>
     <body>
-        <div class="Top">
-            <img class="top_cloud" src="./images/cloud.png" alt="cloud-img ">
-            <h1>I am Shun Ren</h1>
-            <h2>An Aspiring Cybersecurity Professional</h2>
-            <img class="bottom_cloud" src="./images/cloud.png" alt="cloud-img">
-            <img src="./images/mountain.png" alt="mountain-img">
+      <div id="top-part"></div>
+      <nav class="navbar sticky-top navbar-expand-md  navbar-dark fixed-top text-uppercase" style="background-color: #131214; color:#d9c0b2;">
+        <div class="container-fluid" style="background-color: #131214;">
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"
+          aria-controls="nav" aria-label="Expand Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="nav">
+            <ul class="nav nav-pills mr-2" id="link-bar">
+              <li class="nav-item">
+                <a class="nav-link active px-lg-4" id="home_tag" data-toggle="pill" href="#top-part">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-lg-4" id="about_tag" data-toggle="pill" href="./webpages/about_me.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-lg-4" id="project_tag" href="#project_header">Projects</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="middle-container">
-            <img class="me" src="./images/me.jpg" alt="">
-            <h2 class="Hello">Hello.</h2>
-            <p id="intro">Welcome to my website.</p>
-            <p id="intro">I am a 21 year old guy from Singapore. I grew up using computers for leisure and work.</p>
-            <p id="intro">Having a virus infect my old pc sparked my interest in Cybersecurity.</p>
-            <p id="intro">I am now planning to take a CS degree with the intent to specialise in Networking and Cybersecurity.</p>
-            <div class="skills">
-              <hr class="dots">
-              <h2 class="skill-header">My Skills</h2>
-              <div class="skill-row">
-                <img class="skill-image" src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="">
-                <h3>Python</h3>
-                <p>⭐⭐⭐⭐/⭐⭐⭐⭐⭐</p>
-                <p>I started learning python after I had just finished my basic military training.</p>
-                <p class="codeskill-description">So far the most impressive things I have created include a website and a script that utilises Spotify's web API.</p>
-              </div>
-              <div class="skill-row">
-                <img class="skill-image" src="./images/HTML5_logo.png" alt="">
-                <h3>HTML</h3>
-                <p>⭐⭐/⭐⭐⭐⭐⭐</p>
-                <p>I started learning html and css in november of 2022.</p>
-                <p>So far I have only used it to build this site.</p>
-              </div>
-              <div class="skill-row"> 
-                <img class="skill-image" id='nessus_logo' src="./images/nessus.png" alt="" >
-                <h3>Nessus Essentials</h3>
-                <p>⭐⭐/⭐⭐⭐⭐⭐</p>
-                <p>Used nessus for the first time as part of the "Full Ethical Hacking by the Cyber Mentor" course on Youtube</p>
-                <p>Learnt more in depth about the basic configurations of Nessus and its settings from <a href="https://www.youtube.com/watch?v=lT6Px9zJM3s">this youtube video</a></p>
+      </nav>
+        <div id="hero" class="hero route bg-image" style="background-image: url(images/urban.png)">
+          <div class="overlay-itro"></div>
+          <div class="hero-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <h1 class="hero-title mb-4"><span class="name-title" data-typed-items="I, I am, I am Shun, I am Shun Ren"></span></h1>
+                <p class="hero-subtitle"><span class="typed" data-typed-items="Aspiring Cybersecurity Professional, Aspiring Computer Scientist"></span></p>
               </div>
             </div>
+          </div>
+        </div>
+      <div class="container-fluid" id="middle-container">
+        <hr class="dots">
+        <h2 class="skill-header">My Skills</h2>
+        <!--Python container-->
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-2" id="py-img">
+            <img id="py-logo" class="img-fluid" src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="Responsive image">
+          </div>
+          <div class="col-8" id="skill-desc">
+            <h3>Python</h3>
+            <p>⭐⭐⭐⭐/⭐⭐⭐⭐⭐</p>
+            <p>I started learning python after I had just finished my basic military training.</p>
+            <p>So far the most impressive things I have created include a website and a script that utilises Spotify's web API.</p>
+          </div>
+        </div>
+          <!--html container-->
+          <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-2" id="py-img">
+              <img id="html-logo" class="img-fluid" src="./images/HTML5_logo.png" alt="Responsive image">
+            </div>
+            <div class="col-8" id="skill-desc">
+              <h3>HTML</h3>
+              <p>⭐⭐/⭐⭐⭐⭐⭐</p>
+              <p>I started learning html and css in november of 2022.</p>
+              <p>So far I have only used it to build this site.</p>
+            </div>
+          </div>
+          <!--nessus container-->
+          <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-2" id="py-img">
+              <img id="nessus-logo" class="img-fluid" src="./images/nessus.png" alt="Responsive image">
+            </div>
+            <div class="col-8" id="skill-desc">
+              <h3>Nessus Essentials</h3>
+              <p>⭐⭐/⭐⭐⭐⭐⭐</p>
+              <p>Used nessus for the first time as part of the "Full Ethical Hacking by the Cyber Mentor" course on Youtube
+              </p>
+              <p>Learnt more in depth about the basic configurations of Nessus and its settings from this youtube video
+              </p>
+            </div>
+          <hr class="dots" id="project_header">
+          <div class="container-fluid" id="projects-container">
+            <h2 >My Projects</h2>
+            <h4 id="si_game_header">Space Invaders-like game</h4>
+              <div class="col-12">
+                <div class="image-wrapper">
+                <img id="game_ss" src="./images/space_invaders.png" alt="Responsive image" class="rounded mx-auto d-block">
+                  <div class="middle_state">
+                    <button type="button" class="btn btn-primary btn-lg" id="si_proj_btn">Find out more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <p></p>
+          <p></p>
+          <div class="container-fluid" id="projects-container">
+            <h4 id="spotify_tm">Spotify Time Machine</h4>
+            <div class="row"></div>
+              <div class="col-12">
+                <div class="image-wrapper">
+                <img id="game_ss" src="./images/spotify-time-machine.png" alt="Responsive image" class="rounded mx-auto d-block">
+                  <div class="middle_state">
+                    <a type="button" class="btn btn-primary btn-lg" id="spot_proj_btn">Find out more</a>
+                  </div>
+                </div>
+              </div>
             <hr class="dots">
             <div class="contact-me">
               <h2>Get In Touch</h2>
-              <h3></h3>
-              <p><a href=""></a></p>
-              <a class="btn" href="mailto:zhengshunren@outlook.com.com">CONTACT ME</a>
-            </div>
-          </div>          
+              <a type="button" class="contact_btn" href="mailto:zhengshunren@outlook.com.com">Contact me</a>
+          </div>
+          </div>
         </div>
-        <div class="bottom-container">
+        </div>
+          <div class="container-fluid" id="page_footer">
             <a class="footer-link" href="https://www.linkedin.com/in/zheng-shun-ren-43b919249/"><img class="popup" src="./images/LinkedIn_logo.png"></img></a>
             <a class="footer-link" href="https://github.com/ZShunRen"><img class="popup" src="./images/github_logo.png"></img></a>
-            <p>© 2023 Zheng Shun Ren.</p>
-        </div>
+          </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="./scripts/typed.js/typed.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        function type_name(second_fn){
+         const name_title = document.querySelector('.name-title')
+         if (name_title) {
+           let typed_strings = name_title.getAttribute('data-typed-items')
+           typed_strings = typed_strings.split(',')
+           new Typed('.name-title', {
+             strings: typed_strings,
+             typeSpeed: 30,
+             backSpeed: 100,
+             backDelay: 200,
+             showCursor:true,
+             onComplete:function(){
+              second_fn();
+              const cursor = document.querySelector('.typed-cursor'); /*the new element generated is typed-cursor, just target that instead*/
+              cursor.style.display = 'none';
+             }
+           });
+         }
+        }
+
+        function type_descrpt()
+        {
+          const typed = document.querySelector('.typed')
+          if (typed) {
+            let typed_strings = typed.getAttribute('data-typed-items')
+            typed_strings = typed_strings.split(',')
+            new Typed('.typed', {
+              strings: typed_strings,
+              loop: true,
+              typeSpeed: 50,
+              backSpeed: 50,
+              backDelay: 2000,
+            });
+          }
+        };
+        type_name(type_descrpt)
+
+        function add_project_tag()
+        {
+          var proj_tag_element=document.querySelector('#project_tag');
+          var home_tag_element=document.querySelector('#home_tag');
+            home_tag_element.classList.remove("active");
+            proj_tag_element.classList.add("active");
+        }
+
+        game_btn=document.querySelector("#si_proj_btn");
+        game_btn.addEventListener('click',function()
+        {
+          window.location.href= "./webpages/space_invaders.html";
+
+        })
+        spot_btn=document.querySelector("#spot_proj_btn");
+        spot_btn.addEventListener('click',function()
+        {
+          window.location.href= "./webpages/spot_time_mac.html";
+        });
+
+
+        /* Put the element that is in the middle of the section here. */
+        const projects_section=document.querySelector('#spotify_tm');
+        const observer= new IntersectionObserver(entries=>{
+
+          entries.forEach(entry=>{
+            if(entry.isIntersecting)
+            {
+              add_project_tag();
+              console.log('User scrolled to my section');
+            } else {
+              const proj_tag_element = document.querySelector('#project_tag');
+              const home_tag_element = document.querySelector('#home_tag');
+              if (proj_tag_element.classList.contains('active')) {
+                proj_tag_element.classList.remove('active');
+                home_tag_element.classList.add('active');
+              }
+            }
+          });
+        });
+      observer.observe(projects_section);
+
+      </script>
+      <!--1. Implement a projects html with different anchor tags with smooth scrolling-->
     </body>
 
-</html>
+    </html>
