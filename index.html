@@ -96,45 +96,48 @@
               </p>
             </div>
           <hr class="dots" id="project_header">
-          <div class="container-fluid" id="projects-container">
-            <h2 >My Projects</h2>
-            <h4 id="si_game_header">Space Invaders-like game</h4>
+          <div id="second-half">
+
+            <div class="container-fluid" id="projects-container">
+              <h2 >My Projects</h2>
+              <h4 id="si_game_header">Space Invaders-like game</h4>
               <div class="col-12">
                 <div class="image-wrapper">
-                <img id="game_ss" src="./images/space_invaders.png" alt="Responsive image" class="rounded mx-auto d-block">
+                  <img id="game_ss" src="./images/space_invaders.png" alt="Responsive image" class="rounded mx-auto d-block">
                   <div class="middle_state">
                     <button type="button" class="btn btn-primary btn-lg" id="si_proj_btn">Find out more</button>
                   </div>
                 </div>
               </div>
             </div>
-          <p></p>
-          <p></p>
-          <div class="container-fluid" id="projects-container">
-            <h4 id="spotify_tm">Spotify Time Machine</h4>
-            <div class="row"></div>
+            <p></p>
+            <p></p>
+            <div class="container-fluid" id="projects-container">
+              <h4 id="spotify_tm">Spotify Time Machine</h4>
+              <div class="row"></div>
               <div class="col-12">
                 <div class="image-wrapper">
-                <img id="game_ss" src="./images/spotify-time-machine.png" alt="Responsive image" class="rounded mx-auto d-block">
+                  <img id="game_ss" src="./images/spotify-time-machine.png" alt="Responsive image" class="rounded mx-auto d-block">
                   <div class="middle_state">
                     <a type="button" class="btn btn-primary btn-lg" id="spot_proj_btn">Find out more</a>
                   </div>
                 </div>
               </div>
-            <hr class="dots">
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <a type="button" class="contact_btn" href="mailto:zhengshunren@outlook.com.com">Contact me</a>
-          </div>
+              <hr class="dots">
+              <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <a type="button" class="contact_btn" href="mailto:zhengshunren@outlook.com.com">Contact me</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="container-fluid" id="page_footer">
+          <a class="footer-link" href="https://www.linkedin.com/in/zheng-shun-ren-43b919249/"><img class="popup" src="./images/LinkedIn_logo.png"></img></a>
+          <a class="footer-link" href="https://github.com/ZShunRen"><img class="popup" src="./images/github_logo.png"></img></a>
         </div>
-          <div class="container-fluid" id="page_footer">
-            <a class="footer-link" href="https://www.linkedin.com/in/zheng-shun-ren-43b919249/"><img class="popup" src="./images/LinkedIn_logo.png"></img></a>
-            <a class="footer-link" href="https://github.com/ZShunRen"><img class="popup" src="./images/github_logo.png"></img></a>
-          </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-      <script src="./scripts/typed.js/typed.min.js"></script>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="./scripts/typed.js/typed.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script>
         function type_name(second_fn){
@@ -196,26 +199,32 @@
 
 
         /* Put the element that is in the middle of the section here. */
-        const projects_section=document.querySelector('#spotify_tm');
-        const observer= new IntersectionObserver(entries=>{
+        function CreateNewObserver(){
+          const observer= new IntersectionObserver(entries=>{
 
-          entries.forEach(entry=>{
-            if(entry.isIntersecting)
-            {
-              add_project_tag();
-              console.log('User scrolled to my section');
-            } else {
+            entries.forEach(entry=>{
+              if(entry.isIntersecting)
+              {
+                add_project_tag();
+              } 
+              else{
               const proj_tag_element = document.querySelector('#project_tag');
               const home_tag_element = document.querySelector('#home_tag');
-              if (proj_tag_element.classList.contains('active')) {
+              if (proj_tag_element.classList.contains('active'))
+              {
                 proj_tag_element.classList.remove('active');
                 home_tag_element.classList.add('active');
-              }
+              } 
             }
-          });
-        });
-      observer.observe(projects_section);
-
+            })
+          }
+          );
+        return observer;
+        
+        }
+        const projects_section=document.querySelector('#second-half');
+        project_observer=CreateNewObserver();
+        project_observer.observe(projects_section)
       </script>
       <!--1. Implement a projects html with different anchor tags with smooth scrolling-->
     </body>
