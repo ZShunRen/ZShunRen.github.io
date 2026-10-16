@@ -1,0 +1,70 @@
+[
+  {
+    "name": "desktop",
+    "positions": [
+      {
+        "x": 892.7999877929688,
+        "y": 738,
+        "pathDistance": 0,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 1440
+      },
+      {
+        "x": 322.08148193359375,
+        "y": 1520,
+        "pathDistance": 0.009064542688158659,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 1440
+      },
+      {
+        "x": 345.6000061035156,
+        "y": 4675,
+        "pathDistance": 0.00048828125,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 1440
+      }
+    ],
+    "sharedGustChanges": true,
+    "pauseFreezesTraveler": true,
+    "reduced": {
+      "canvas": "none",
+      "cloud": "none",
+      "smoke": "none"
+    },
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "positions": [
+      {
+        "x": 241.8000030517578,
+        "y": 623.2000122070312,
+        "pathDistance": 0,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 390
+      },
+      {
+        "x": 11.000004768371582,
+        "y": 1267.6800537109375,
+        "pathDistance": 9.5367431640625e-7,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 390
+      },
+      {
+        "x": 108.7715072631836,
+        "y": 4983.68017578125,
+        "pathDistance": 0.038295044195756384,
+        "bodyFill": "rgb(54, 94, 84)",
+        "scrollWidth": 390
+      }
+    ],
+    "sharedGustChanges": true,
+    "pauseFreezesTraveler": true,
+    "reduced": {
+      "canvas": "none",
+      "cloud": "none",
+      "smoke": "none"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "Shun Ren",
+  "subtitle": "Singapore-based security & software engineer",
+  "description": "Shun Ren — Singapore-based security & software engineer. Projects, skills, and background.",
+  "email": "zhengshunren@outlook.com",
+  "github": "https://github.com/ZShunRen",
+  "linkedin": "https://www.linkedin.com/in/zheng-shun-ren-43b919249/",
+  "about": {
+    "paragraphs": [
+      "Hello there. You can call me Shun.",
+      "I'm am aspiring cyber security programmer still paving my own path through the maze of programming languages.",
+      "Being a digital native, my gaze is always turned towards the future.However, I believe that just like in any other tide of change before it, in order for IT to thrive, we need a strong foundation of security.",
+      "I am now planning to take a CS degree with the intent to specialise in Networking and Cybersecurity."
+    ]
+  }
+}

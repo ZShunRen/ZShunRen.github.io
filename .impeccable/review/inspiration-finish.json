@@ -1,0 +1,29 @@
+{
+  "disposition": "ship",
+  "scope": "GitHub inspiration research and scoped alpine motion refinements",
+  "research": ".impeccable/research/alpine-portfolio-inspiration.md",
+  "researchModel": "gpt-6-luna",
+  "researchEffort": "medium",
+  "modelNote": "Requested 5.6 Luna unavailable; available GPT-6 Luna substitution disclosed.",
+  "features": [
+    "Route-following geometric SVG hiker with cached route samples and scroll-bound stride",
+    "Existing trail sign is a keyboard-accessible project anchor",
+    "Three drifting SVG clouds",
+    "Shared gust drives snow, foliage, and chimney drift",
+    "Short sheltered town flakes contrast with exposed mountain snow"
+  ],
+  "checks": [
+    "inspiration-checks.json",
+    "route-motion-checks.json",
+    "Original paragraph preservation",
+    "JavaScript syntax",
+    "git diff whitespace"
+  ],
+  "review": "Fresh independent scoped reviewer returned ship, no material findings.",
+  "timingSample": {
+    "environment": "Local headless Chromium desktop, 1.5 second samples",
+    "baselineMeanFrameMs": 16.667,
+    "refinedMeanFrameMs": 16.666,
+    "limitation": "Not a real-device performance guarantee."
+  }
+}

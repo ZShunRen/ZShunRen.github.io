@@ -1,0 +1,98 @@
+[
+  {
+    "name": "desktop",
+    "weatherChanges": {
+      "snow": true,
+      "wind": true
+    },
+    "distinctDepth": 7,
+    "treePlacementPreserved": true,
+    "forestMoves": true,
+    "readingContentStable": true,
+    "states": {
+      "activeSmoke": "running",
+      "offscreenSmoke": "paused",
+      "light": "0.797",
+      "svgIds": [
+        "projects-window-light",
+        "projects-snow-light",
+        "projects-window-halo",
+        "projects-mobile-window-light",
+        "projects-mobile-snow-light",
+        "projects-mobile-window-halo",
+        "garden-window-light",
+        "garden-snow-light",
+        "garden-window-halo",
+        "garden-mobile-window-light",
+        "garden-mobile-snow-light",
+        "garden-mobile-window-halo",
+        "contact-window-light",
+        "contact-snow-light",
+        "contact-window-halo",
+        "contact-mobile-window-light",
+        "contact-mobile-snow-light",
+        "contact-mobile-window-halo"
+      ],
+      "scrollWidth": 1440
+    },
+    "paused": {
+      "pressed": "false",
+      "smoke": "paused",
+      "transform": "translate(0px, 0px) scale(1)"
+    },
+    "reduced": {
+      "canvas": "none",
+      "disabled": true,
+      "wind": "0deg"
+    },
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "weatherChanges": {
+      "snow": true,
+      "wind": true
+    },
+    "distinctDepth": 7,
+    "treePlacementPreserved": true,
+    "forestMoves": true,
+    "readingContentStable": true,
+    "states": {
+      "activeSmoke": "running",
+      "offscreenSmoke": "paused",
+      "light": "0.812",
+      "svgIds": [
+        "projects-window-light",
+        "projects-snow-light",
+        "projects-window-halo",
+        "projects-mobile-window-light",
+        "projects-mobile-snow-light",
+        "projects-mobile-window-halo",
+        "garden-window-light",
+        "garden-snow-light",
+        "garden-window-halo",
+        "garden-mobile-window-light",
+        "garden-mobile-snow-light",
+        "garden-mobile-window-halo",
+        "contact-window-light",
+        "contact-snow-light",
+        "contact-window-halo",
+        "contact-mobile-window-light",
+        "contact-mobile-snow-light",
+        "contact-mobile-window-halo"
+      ],
+      "scrollWidth": 390
+    },
+    "paused": {
+      "pressed": "false",
+      "smoke": "paused",
+      "transform": "translate(0px, 0px) scale(1)"
+    },
+    "reduced": {
+      "canvas": "none",
+      "disabled": true,
+      "wind": "0deg"
+    },
+    "errors": []
+  }
+]

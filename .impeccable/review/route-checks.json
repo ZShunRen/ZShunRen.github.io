@@ -1,0 +1,88 @@
+[
+  {
+    "width": 1440,
+    "pass": true,
+    "shared": true,
+    "pathCount": 1,
+    "first": {
+      "x": 892.7999877929688,
+      "y": 738
+    },
+    "last": {
+      "x": 518.4000244140625,
+      "y": 4865.453125
+    },
+    "pageBottom": 4865.453125,
+    "crossings": [
+      {
+        "section": "skills",
+        "y": 900,
+        "x": 432,
+        "gap": 0.00006103515625
+      },
+      {
+        "section": "project_header",
+        "y": 1855.59375,
+        "x": 363.40625,
+        "gap": 0.0001220703125
+      },
+      {
+        "section": "about",
+        "y": 2979.15625,
+        "x": 165,
+        "gap": 0
+      },
+      {
+        "section": "contact",
+        "y": 4295.453125,
+        "x": 225,
+        "gap": 0
+      }
+    ],
+    "transformed": false,
+    "viewportWidth": 1440
+  },
+  {
+    "width": 390,
+    "pass": true,
+    "shared": true,
+    "pathCount": 1,
+    "first": {
+      "x": 241.8000030517578,
+      "y": 623.2000122070312
+    },
+    "last": {
+      "x": 140.39999389648438,
+      "y": 5091.734375
+    },
+    "pageBottom": 5091.734375,
+    "crossings": [
+      {
+        "section": "skills",
+        "y": 760,
+        "x": 117,
+        "gap": 0.00006103515625
+      },
+      {
+        "section": "project_header",
+        "y": 1924.921875,
+        "x": 89.69999694824219,
+        "gap": 0
+      },
+      {
+        "section": "about",
+        "y": 2920.390625,
+        "x": 11,
+        "gap": 0.000244140625
+      },
+      {
+        "section": "contact",
+        "y": 4601.734375,
+        "x": 89.69998931884766,
+        "gap": 0.00048828125
+      }
+    ],
+    "transformed": false,
+    "viewportWidth": 390
+  }
+]

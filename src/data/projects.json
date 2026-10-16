@@ -1,0 +1,18 @@
+{
+  "spaceInvaders": {
+    "title": "Space Invaders Game",
+    "description": "Shun Ren — Singapore-based security & software engineer. Projects, skills, and background.",
+    "repository": "https://github.com/ZShunRen/Space_Invaders_Game",
+    "paragraphs": [
+      "I learnt a lot from this project. It was one of the first times I used object-oriented programming. The change in thought processes from procedural programming to object-oriented programming was a bit jarring at first but, after I got used to it did I realise how OOP was a lot more useful than procedural programming especially when all I had to do to change one attribute was to go to its respective file."
+    ]
+  },
+  "spotifyTimeMachine": {
+    "title": "Spotify Time Machine Script",
+    "description": "Shun Ren — Singapore-based security & software engineer. Projects, skills, and background.",
+    "repository": "https://github.com/ZShunRen/Spotify-Time-Machine",
+    "paragraphs": [
+      "This was my first time utilising an API in conjuction with web scraping in order to analyse and process data. Learning and reading the documentation of an external library, Spotipy, I found out that I was able to access various features of Spotify's client, including the searching of songs and creation of playlists. Overall it was an enlightening experience."
+    ]
+  }
+}

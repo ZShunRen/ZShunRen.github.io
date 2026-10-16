@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T20:17:58+08:00",
+  "title": "Design System: Shun Ren — Summit to town",
+  "extensions": {
+    "colorMeta": {
+      "snow": {
+        "role": "neutral",
+        "displayName": "Snow",
+        "tonalRamp": [
+          "oklch(15.00% 0.0139 124.55)",
+          "oklch(26.43% 0.0139 124.55)",
+          "oklch(37.86% 0.0139 124.55)",
+          "oklch(49.29% 0.0139 124.55)",
+          "oklch(60.71% 0.0139 124.55)",
+          "oklch(72.14% 0.0139 124.55)",
+          "oklch(83.57% 0.0139 124.55)",
+          "oklch(95.00% 0.0139 124.55)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.0106 112.36)",
+          "oklch(26.43% 0.0106 112.36)",
+          "oklch(37.86% 0.0106 112.36)",
+          "oklch(49.29% 0.0106 112.36)",
+          "oklch(60.71% 0.0106 112.36)",
+          "oklch(72.14% 0.0106 112.36)",
+          "oklch(83.57% 0.0106 112.36)",
+          "oklch(95.00% 0.0106 112.36)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0333 204.76)",
+          "oklch(26.43% 0.0333 204.76)",
+          "oklch(37.86% 0.0333 204.76)",
+          "oklch(49.29% 0.0333 204.76)",
+          "oklch(60.71% 0.0333 204.76)",
+          "oklch(72.14% 0.0333 204.76)",
+          "oklch(83.57% 0.0333 204.76)",
+          "oklch(95.00% 0.0333 204.76)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted evergreen",
+        "tonalRamp": [
+          "oklch(15.00% 0.0347 185.52)",
+          "oklch(26.43% 0.0347 185.52)",
+          "oklch(37.86% 0.0347 185.52)",
+          "oklch(49.29% 0.0347 185.52)",
+          "oklch(60.71% 0.0347 185.52)",
+          "oklch(72.14% 0.0347 185.52)",
+          "oklch(83.57% 0.0347 185.52)",
+          "oklch(95.00% 0.0347 185.52)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "pine": {
+        "role": "primary",
+        "displayName": "Pine",
+        "tonalRamp": [
+          "oklch(15.00% 0.0485 176.20)",
+          "oklch(26.43% 0.0485 176.20)",
+          "oklch(37.86% 0.0485 176.20)",
+          "oklch(49.29% 0.0485 176.20)",
+          "oklch(60.71% 0.0485 176.20)",
+          "oklch(72.14% 0.0485 176.20)",
+          "oklch(83.57% 0.0485 176.20)",
+          "oklch(95.00% 0.0485 176.20)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Soft line",
+        "tonalRamp": [
+          "oklch(15.00% 0.0223 149.67)",
+          "oklch(26.43% 0.0223 149.67)",
+          "oklch(37.86% 0.0223 149.67)",
+          "oklch(49.29% 0.0223 149.67)",
+          "oklch(60.71% 0.0223 149.67)",
+          "oklch(72.14% 0.0223 149.67)",
+          "oklch(83.57% 0.0223 149.67)",
+          "oklch(95.00% 0.0223 149.67)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Warm amber",
+        "tonalRamp": [
+          "oklch(15.00% 0.0828 82.01)",
+          "oklch(26.43% 0.0828 82.01)",
+          "oklch(37.86% 0.0828 82.01)",
+          "oklch(49.29% 0.0828 82.01)",
+          "oklch(60.71% 0.0828 82.01)",
+          "oklch(72.14% 0.0828 82.01)",
+          "oklch(83.57% 0.0828 82.01)",
+          "oklch(95.00% 0.0828 82.01)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      },
+      "sky": {
+        "role": "neutral",
+        "displayName": "Winter sky",
+        "tonalRamp": [
+          "oklch(15.00% 0.0152 186.67)",
+          "oklch(26.43% 0.0152 186.67)",
+          "oklch(37.86% 0.0152 186.67)",
+          "oklch(49.29% 0.0152 186.67)",
+          "oklch(60.71% 0.0152 186.67)",
+          "oklch(72.14% 0.0152 186.67)",
+          "oklch(83.57% 0.0152 186.67)",
+          "oklch(95.00% 0.0152 186.67)"
+        ],
+        "rampPurpose": "Synthesized preview metadata; not an implemented CSS scale."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Name heading",
+        "purpose": "Home identity; mobile size and inner-page variants remain in CSS."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Primary section headings with local contact and education variants."
+      },
+      "title": {
+        "displayName": "Content title",
+        "purpose": "Skill and content subheadings; project titles have a local size."
+      },
+      "body": {
+        "displayName": "Reading text",
+        "purpose": "Single self-hosted monospace family; mobile global size is 14px."
+      },
+      "label": {
+        "displayName": "Supporting text",
+        "purpose": "Regular navigation and supporting labels; action links use bold."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "action-transition",
+        "value": "0.2s ease",
+        "purpose": "Contact background and text-link arrow."
+      },
+      {
+        "name": "screenshot-transition",
+        "value": "transform 0.3s ease",
+        "purpose": "Image link hover scale of 1.025."
+      },
+      {
+        "name": "scene-depth",
+        "value": "clamped section progress × per-layer data-depth",
+        "purpose": "Native scroll moves distant summit peaks and independent foreground trees/buildings. Connected snowbanks, the shared route, and reading surfaces stay fixed in document coordinates; route strokes never carry data-depth transforms."
+      },
+      {
+        "name": "shared-gust",
+        "value": "pow((sin(elapsed * 0.68) + 1) / 2, 2) * 0.75 + 0.12",
+        "purpose": "One elapsed-time gust drives wind-snow canvases, pine bend, and chimney horizontal drift across summit, forest, town, garden, and contact. Exposed regions use directional strokes; sheltered regions below intensity 0.4 use small round flakes. Summit intensity 1, forest 0.7, town 0.32, garden 0.25; contact uses the town environment."
+      },
+      {
+        "name": "pine-sway",
+        "value": "(0.5 + gust * 2.2) * sin(elapsed * 0.9) deg",
+        "purpose": "Skew inner foliage groups without overwriting SVG placement transforms."
+      },
+      {
+        "name": "town-arrival",
+        "value": "--arrival-light: 0.65 + progress * 0.35",
+        "purpose": "Warm window and snow lightspills strengthen on town approach; static fallback is 1."
+      },
+      {
+        "name": "chimney-drift",
+        "value": "6s ease-out infinite",
+        "purpose": "Staggered wisps fade while drifting from translate(-2px, 6px) scale(0.75) to translate(var(--wind-drift), -34px) scale(1.25). Shared gust sets --wind-drift to 12 + gust * 25 px, coordinating with foliage --wind-bend."
+      },
+      {
+        "name": "hearth-light",
+        "value": "8s ease-in-out infinite",
+        "purpose": "Opacity gently varies between arrival-light and 0.93 times that value; gradient windows and snow spill supply static depth."
+      },
+      {
+        "name": "garden-lamp",
+        "value": "11s ease-in-out infinite",
+        "purpose": "Garden window-light groups reuse the hearth-light keyframes at a slower cadence."
+      },
+      {
+        "name": "trail-sign-breeze",
+        "value": "7s ease-in-out infinite",
+        "purpose": "Visible active forest sign link rotates between -1deg, 1.6deg, and -0.6deg. The native anchor targets projects, supports keyboard focus, and stops swaying with reduced motion."
+      },
+      {
+        "name": "project-light-wash",
+        "value": "opacity 250ms ease",
+        "purpose": "A warm radial wash appears over project screenshot frames on row hover and focus-within."
+      },
+      {
+        "name": "motion-pause",
+        "value": "enabled = false",
+        "purpose": "Top-of-page toggle clears weather and stops scenic/cloud animation while retaining scenery depth and traveler placement. The control updates aria-pressed and the on/off label."
+      },
+      {
+        "name": "visibility-budget",
+        "value": "IntersectionObserver + document.visibilitychange",
+        "purpose": "Only visible environment canvases draw; offscreen cloud, light, and smoke CSS animation pauses. A hidden document cancels requestAnimationFrame and pauses these CSS loops; small screens receive fewer particles and canvas pixel ratio is capped at 1.5."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Clear scenic transforms, place traveler at trail start without stride, hide weather canvases, disable smooth scrolling and cloud/smoke/CSS animation/transitions; disable scenery toggle and show Motion reduced."
+      },
+      {
+        "name": "connected-ground",
+        "value": "fixed page-space route; remeasure on layout changes",
+        "purpose": "One journey-ground SVG shares a measured path across bank, edge, and core. measureTrail joins cubic bends with shared endpoints and aligned vertical tangent directions; resize, ResizeObserver, and font readiness trigger measurement. Scroll, pause, and reduced motion do not move this geometry."
+      },
+      {
+        "name": "trail-traveler",
+        "value": "cached 513 route samples; targetY = scrollY + viewportHeight * 0.72",
+        "purpose": "Layout measurement samples the shared route; runtime binary search and interpolation position the decorative SVG hiker without per-frame SVG geometry reads. Stride is sin(scrollY * 0.045) * 1.6 px, so idle time produces no walking. Pause preserves position; reduced motion returns it to the start without stride."
+      },
+      {
+        "name": "summit-clouds",
+        "value": "62s / 73s / 84s linear infinite alternate",
+        "purpose": "Three low-opacity geometric SVG clouds translate horizontally from -25px to 55px with staggered delays. Loops run only in a visible active scene with motion enabled; pause, hidden document, and reduced motion stop their animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Contact action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Pine contact link with an inline arrow.",
+      "html": "<a class=\"ds-button\" href=\"mailto:zhengshunren@outlook.com\">Contact me<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:inline-flex;gap:24px;align-items:center;justify-content:center;background:var(--pine,#365e54);color:var(--paper,#f9faf2);padding:12px 24px;border-radius:4px;text-decoration:none;font-size:13px;line-height:1.8;transition:background .2s ease}.ds-button:hover{background:var(--ink,#243f42)}.ds-button:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Underlined action with a gently shifting arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"/#project_header\">My projects<svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-text-link{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;line-height:1.8;color:var(--pine,#365e54);padding:6px 0;border-bottom:1px solid currentColor;text-decoration:none}.ds-text-link svg{transition:transform .2s ease}.ds-text-link:hover svg{transform:translateX(4px)}.ds-text-link:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px;}@media(prefers-reduced-motion:reduce){.ds-text-link svg{transition:none}}"
+    },
+    {
+      "name": "Main navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Canonical site links with a small mountain wordmark.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-wordmark\" href=\"/\"><svg viewBox=\"0 0 38 26\" width=\"38\" height=\"26\" aria-hidden=\"true\"><path d=\"m2 23 12-19 9 14 5-8 8 13M9 12l5 2 4-2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span>Shun Ren</span></a><div class=\"ds-nav-links\"><a href=\"/#top-part\" aria-current=\"page\">Home</a><a href=\"/about/\">About me</a><a href=\"/#project_header\">Projects</a><a href=\"/blog/\">Blog</a></div></nav>",
+      "css": ".ds-nav{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1280px;padding:27px 40px;background:var(--sky,#d9e7e5);line-height:1.8}.ds-wordmark{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--ink,#243f42);text-decoration:none}.ds-nav-links{display:flex;gap:32px;font-size:13px}.ds-nav-links a{color:var(--pine,#365e54);padding:7px 0;text-decoration:none}.ds-nav-links a:hover,.ds-nav-links [aria-current]{text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px;}@media(max-width:600px){.ds-nav{padding:20px;gap:12px}.ds-wordmark{font-size:12px;gap:6px}.ds-wordmark svg{width:27px}.ds-nav-links{gap:13px;font-size:12px}}"
+    },
+    {
+      "name": "Reading surface",
+      "kind": "card",
+      "refersTo": "reading-surface",
+      "description": "Opaque paper protects longer copy.",
+      "html": "<section class=\"ds-surface\"><h2>About me</h2><p>Hello there. You can call me Shun.</p></section>",
+      "css": ".ds-surface{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);max-width:1020px;padding:52px 64px;background:var(--paper,#f9faf2);color:var(--ink,#243f42);border-radius:var(--radius,8px);font-size:15px;line-height:1.8}.ds-surface h2{margin:0 0 40px;font-size:clamp(1.6rem,3vw,2.15rem);line-height:1.3;letter-spacing:-.03em}.ds-surface p{margin:0}@media(max-width:900px){.ds-surface{padding:40px}}@media(max-width:600px){.ds-surface{padding:30px 24px;font-size:14px}}"
+    },
+    {
+      "name": "Skill row",
+      "kind": "custom",
+      "refersTo": "skill-row",
+      "description": "A divided content row with an accessible self-rating.",
+      "html": "<article class=\"ds-skill\"><div class=\"ds-skill-label\"><h3>Python</h3><span class=\"ds-rating\" aria-label=\"Self-rated 4 out of 5\"><span class=\"ds-dot ds-filled\"></span><span class=\"ds-dot ds-filled\"></span><span class=\"ds-dot ds-filled\"></span><span class=\"ds-dot ds-filled\"></span><span class=\"ds-dot\"></span></span></div><p>I started learning python after I had just finished my basic military training.</p></article>",
+      "css": ".ds-skill{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:grid;grid-template-columns:175px 1fr;gap:34px;padding:32px 0;border-top:1px solid var(--line,#c5d3c7);background:var(--paper,#f9faf2);color:var(--ink,#243f42);line-height:1.8}.ds-skill h3{font-size:1.05rem;line-height:1.3;letter-spacing:-.02em;margin:0 0 12px}.ds-skill p{font-size:14px;margin:0}.ds-rating{display:flex;gap:6px}.ds-dot{width:6px;height:6px;border:1px solid var(--muted,#486561);border-radius:50%;box-sizing:border-box}.ds-filled{background:var(--muted,#486561)}@media(max-width:600px){.ds-skill{grid-template-columns:1fr;gap:20px;padding:28px 0}.ds-skill-label{display:flex;align-items:center;justify-content:space-between;gap:20px}.ds-skill h3{font-size:14px;margin:0}.ds-skill p{line-height:1.9}}"
+    },
+    {
+      "name": "Gallery controls",
+      "kind": "button",
+      "refersTo": "gallery-control",
+      "description": "Native previous/next controls; this preview shows styling only.",
+      "html": "<div class=\"ds-gallery-controls\"><button type=\"button\" aria-label=\"Previous image\">←</button><span class=\"ds-count\">1 / 3</span><button type=\"button\" aria-label=\"Next image\">→</button></div>",
+      "css": ".ds-gallery-controls{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:flex;justify-content:center;align-items:center;gap:24px;padding:20px 0 0;color:var(--ink,#243f42)}.ds-gallery-controls button{font:inherit;width:44px;height:44px;border:1px solid var(--line,#c5d3c7);border-radius:4px;background:var(--paper,#f9faf2);color:var(--ink,#243f42);cursor:pointer}.ds-gallery-controls button:hover{background:#e4e9df}.ds-gallery-controls button:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px;}.ds-gallery-controls button:disabled{opacity:.5;cursor:default}.ds-count{font-size:12px}"
+    },
+    {
+      "name": "Detail heading backplate",
+      "kind": "custom",
+      "refersTo": "page-heading",
+      "description": "Opaque title backing used within the illustrated detail banner.",
+      "html": "<div class=\"ds-page-heading\"><h1>Space Invaders Game</h1><a class=\"ds-back\" href=\"/#project_header\">Back to projects</a></div>",
+      "css": ".ds-page-heading{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:inline-block;max-width:100%;padding:24px;background:var(--paper,#f9faf2);color:var(--ink,#243f42);border-radius:4px;line-height:1.8}.ds-page-heading h1{font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.3;letter-spacing:-.035em;margin:0 0 24px;max-width:800px}.ds-back{font-size:13px;color:var(--pine,#365e54);text-underline-offset:5px;text-decoration-thickness:1px}.ds-back:hover{text-decoration-thickness:2px}.ds-back:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px;}@media(max-width:600px){.ds-page-heading h1{font-size:1.7rem}}"
+    },
+    {
+      "name": "Scenery motion toggle",
+      "kind": "button",
+      "refersTo": "motion-toggle",
+      "description": "Homepage on/off control; this self-contained preview shows styling and state attributes, without the animation runtime.",
+      "html": "<button class=\"ds-motion-toggle\" type=\"button\" aria-label=\"Scenery animation\" aria-pressed=\"true\"><svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M6 4v12M14 4v12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg><span>Motion on</span></button>",
+      "css": ".ds-motion-toggle{font-family:var(--body,CaskaydiaCove,\"Cascadia Code\",monospace);display:flex;gap:9px;align-items:center;min-height:44px;padding:8px 14px;font-size:12px;line-height:1.8;color:var(--pine,#365e54);background:var(--paper,#f9faf2);border:1px solid var(--line,#c5d3c7);border-radius:4px;cursor:pointer}.ds-motion-toggle:hover{background:var(--snow,#eff3e9)}.ds-motion-toggle:focus-visible{outline:3px solid #397d88;outline-offset:6px;border-radius:3px}.ds-motion-toggle[aria-pressed=\"false\"] svg{opacity:.5}.ds-motion-toggle:disabled{opacity:.5;cursor:default}@media(max-width:600px){.ds-motion-toggle{padding:6px 10px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Summit to town",
+    "overview": "A quiet winter descent frames a personal portfolio and blog: layered mountain silhouettes, snow-covered pines, timber houses, and warm windows suggest a small town inspired by Zakopane. The near-future premise stays understated; the implemented scenery is clean SVG illustration with sparse texture, rather than a dense technological spectacle.\n\nStraightforward monospace typography and opaque paper reading surfaces keep the person, project evidence, and resume content easy to scan. The landscape supplies atmosphere around conventional navigation and content layouts. The rejected image-generated raster proposals are not design authority; the implemented SVG assets and CSS define this world.",
+    "keyCharacteristics": [
+      "Clean illustrated winter silhouettes with subtle texture.",
+      "Dark evergreen text on pale snow and paper surfaces.",
+      "CaskaydiaCove Nerd Font throughout, with simple hierarchy.",
+      "Flat reading panels and conventional portfolio layouts.",
+      "Blog indexes, tag archives, and articles reuse the same paper surfaces and monospace hierarchy.",
+      "One continuous road and snow plane across transparent scenic sections.",
+      "Shared winter weather and scroll-driven scenery around stationary reading surfaces, with pause and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Paper Rule",
+        "body": "Put dense reading content and detail-page headings on opaque paper surfaces so illustration never compromises contrast.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Use the chosen CaskaydiaCove stack throughout; preserve plain portfolio typography instead of introducing a fancy display pairing.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Motion Rule",
+        "body": "Move scenery around stationary reading surfaces with native scrolling; provide a pause control, honor reduced motion, and suspend effects outside the visible scene.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Connected Ground Rule",
+        "body": "Keep the route and connected snowbanks outside parallax transforms; share road geometry across sections and move only independent scenery around it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the actual SVG winter assets and subtle texture as the visual authority.",
+      "Do keep resume content and project evidence legible on opaque paper surfaces.",
+      "Do preserve CaskaydiaCove, straightforward navigation, and simple layouts.",
+      "Do retain visible keyboard focus and reduced-motion behavior.",
+      "Do keep real portraits and project screenshots alongside illustrated scenery.",
+      "Do preserve the shared route geometry and depth order across section boundaries.",
+      "Do use the established paper, type, divider, and focus treatments for blog posts and tag archives."
+    ],
+    "donts": [
+      "Don't use the rejected image-generated raster proposals as assets or design authority.",
+      "Don't add fancy typography or elaborate layouts that compete with the portfolio.",
+      "Don't replace the quiet winter town with dense neon or gothic imagery.",
+      "Don't move reading surfaces with the scenery, hijack native scrolling, or run scenic effects while motion is paused or reduced.",
+      "Don't treat self-rating dots as independent interactive controls.",
+      "Don't split the road into local scene paths or apply parallax to connected ground."
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 1160">
+  <defs>
+    <g id="pine">
+      <path d="M-4 0h8v-122h-8z" fill="#6b7771"/>
+      <path d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z" fill="currentColor"/>
+      <path d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z" fill="#eef4ed"/>
+    </g>
+  </defs>
+  <path d="M-30 300 35 190 84 245 147 125 225 230 280 187 310 320Q170 400-30 340Z" fill="#cddedb"/>
+  <path d="m35 190 49 55 63-120 78 105-51-30-26-40-35 55-28 9-25-9z" fill="#eef4ed"/>
+  <path d="M-30 328 28 275 84 305 170 235 280 330Q160 435-30 385Z" fill="#e5ece2"/>
+  <path d="M-30 850 40 730 111 810 190 665 290 800 310 930Q130 1010-30 925Z" fill="#cddedb"/>
+  <path d="m40 730 71 80 79-145 100 135-66-39-33-53-43 67-35 15-39-25z" fill="#eef4ed"/>
+  <path d="M-30 900q115-90 225-30t125 10Q160 1030-30 960Z" fill="#e5ece2"/>
+  <use href="#pine" transform="translate(24 135) scale(.76)" color="#66877c"/>
+  <use href="#pine" transform="translate(140 195) scale(.52)" color="#7c9683"/>
+  <use href="#pine" transform="translate(70 390) scale(.94)" color="#52796f"/>
+  <use href="#pine" transform="translate(215 455) scale(.6)" color="#66877c"/>
+  <use href="#pine" transform="translate(8 560) scale(.66)" color="#7c9683"/>
+  <use href="#pine" transform="translate(130 655) scale(.83)" color="#52796f"/>
+  <use href="#pine" transform="translate(245 745) scale(.48)" color="#66877c"/>
+  <use href="#pine" transform="translate(35 955) scale(1.06)" color="#52796f"/>
+  <use href="#pine" transform="translate(182 1030) scale(.68)" color="#7c9683"/>
+  <use href="#pine" transform="translate(85 1145) scale(.52)" color="#66877c"/>
+</svg>

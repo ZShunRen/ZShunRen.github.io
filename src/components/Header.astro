@@ -1,0 +1,39 @@
+---
+import profile from "../data/profile.json";
+
+interface Props {
+  current?: "home" | "about" | "projects" | "blog";
+}
+
+const { current } = Astro.props;
+const links = [
+  { key: "home", label: "Home", href: "/#top-part" },
+  { key: "about", label: "About me", href: "/about/" },
+  { key: "projects", label: "Projects", href: "/#project_header" },
+  { key: "blog", label: "Blog", href: "/blog/" },
+];
+---
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="wordmark" href="/" aria-label={`${profile.name} home`}>
+      <svg viewBox="0 0 38 26" width="38" height="26" aria-hidden="true">
+        <path
+          d="m2 23 12-19 9 14 5-8 8 13M9 12l5 2 4-2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <span>{profile.name}</span>
+    </a>
+    <div class="nav-links">
+      {links.map(({ key, label, href }) => (
+        <a {href} aria-current={current === key ? "page" : undefined}>{label}</a>
+      ))}
+    </div>
+  </nav>
+</header>

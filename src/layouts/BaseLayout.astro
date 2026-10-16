@@ -1,0 +1,52 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import profile from "../data/profile.json";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+  current?: "home" | "about" | "projects" | "blog";
+  image?: string;
+  article?: boolean;
+}
+
+const {
+  title = profile.name,
+  description = profile.description,
+  bodyClass = "inner-page",
+  current,
+  image,
+  article = false,
+} = Astro.props;
+const pageTitle = title === profile.name ? title : `${title} · ${profile.name}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const socialImage = image ? new URL(image, Astro.site) : undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eff3e9" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content={article ? "article" : "website"} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {socialImage && <meta property="og:image" content={socialImage} />}
+    <meta name="twitter:card" content={socialImage ? "summary_large_image" : "summary"} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <title>{pageTitle}</title>
+  </head>
+  <body class={bodyClass} id="top-part">
+    <Header {current} />
+    <slot />
+    <Footer />
+  </body>
+</html>

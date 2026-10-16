@@ -1,0 +1,15 @@
+---
+// One continuous path and repeating woodland extend to any article length.
+const trail = "M68 0C68 12 32 12 32 25S70 38 70 50S30 63 30 75S60 88 60 100";
+---
+
+<div class="blog-landscape" aria-hidden="true">
+  <div class="blog-peaks"></div>
+  <svg class="blog-trail" viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false">
+    <path d={trail} stroke="#e7ede3" stroke-width="38" />
+    <path d={trail} stroke="#d2ddd4" stroke-width="14" />
+    <path d={trail} stroke="#f9faf1" stroke-width="9" />
+  </svg>
+  <div class="blog-woodland blog-woodland-left"></div>
+  <div class="blog-woodland blog-woodland-right"></div>
+</div>

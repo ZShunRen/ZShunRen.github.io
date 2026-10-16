@@ -1,0 +1,16 @@
+---
+import ProjectDetail from "../../components/ProjectDetail.astro";
+import projects from "../../data/projects.json";
+
+const project = projects.spaceInvaders;
+---
+
+<ProjectDetail
+  title={project.title}
+  description={project.description}
+  repository={project.repository}
+  paragraphs={project.paragraphs}
+  language="Python"
+  projectDate="June, 2021"
+  images={["/images/space_invaders.png", "/images/si_code.png", "/images/si_github.png"]}
+/>

@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "navbar": {
+        "position": "relative",
+        "background": "rgb(217, 231, 229)",
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 109.59375,
+        "links": [
+          {
+            "label": "Home",
+            "href": "/#top-part"
+          },
+          {
+            "label": "About me",
+            "href": "/about/"
+          },
+          {
+            "label": "Projects",
+            "href": "/#project_header"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog/"
+          }
+        ],
+        "overflow": false
+      },
+      "checkedRoutes": 6
+    },
+    {
+      "width": 390,
+      "navbar": {
+        "position": "relative",
+        "background": "rgb(217, 231, 229)",
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 109.59375,
+        "links": [
+          {
+            "label": "Home",
+            "href": "/#top-part"
+          },
+          {
+            "label": "About me",
+            "href": "/about/"
+          },
+          {
+            "label": "Projects",
+            "href": "/#project_header"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog/"
+          }
+        ],
+        "overflow": false
+      },
+      "checkedRoutes": 6
+    },
+    {
+      "width": 768,
+      "navbar": {
+        "position": "relative",
+        "background": "rgb(217, 231, 229)",
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 91.390625,
+        "links": [
+          {
+            "label": "Home",
+            "href": "/#top-part"
+          },
+          {
+            "label": "About me",
+            "href": "/about/"
+          },
+          {
+            "label": "Projects",
+            "href": "/#project_header"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog/"
+          }
+        ],
+        "overflow": false
+      },
+      "checkedRoutes": 6
+    },
+    {
+      "width": 1440,
+      "navbar": {
+        "position": "relative",
+        "background": "rgb(217, 231, 229)",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 91.390625,
+        "links": [
+          {
+            "label": "Home",
+            "href": "/#top-part"
+          },
+          {
+            "label": "About me",
+            "href": "/about/"
+          },
+          {
+            "label": "Projects",
+            "href": "/#project_header"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog/"
+          }
+        ],
+        "overflow": false
+      },
+      "checkedRoutes": 6
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "workflow": "code-led",
+  "previousState": "rejected-raster-state.json",
+  "reason": "User rejected raster proposals and approved code-native SVG mountain-to-town direction.",
+  "userQuotes": [
+    "the images are very obviously AI-generated",
+    "clean illustrated shapes with a little texture, not gen ai aesthetic please",
+    "yes"
+  ],
+  "priorCompsApproved": false,
+  "status": "complete",
+  "finish": {
+    "disposition": "ship",
+    "scope": "Code-led implementation; full initial review followed by a verdict pass resolving banner contrast and screenshot capture findings.",
+    "abandonedRasterGates": "Not passed; archived as a rejected approach."
+  }
+}

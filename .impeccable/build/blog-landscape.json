@@ -1,0 +1,43 @@
+{
+  "workflow": "code-led extension of established alpine design",
+  "requestEvidence": "/tmp/codex-clipboard-HtthDa.png",
+  "target": "src/layouts/BlogLayout.astro",
+  "status": "complete locally",
+  "finish": {
+    "disposition": "ship",
+    "scope": "Blog index, tags, and article source plus desktop/mobile/tall-viewport captures; no runtime-performance claim",
+    "review": ".impeccable/review/blog-landscape-finish.md"
+  },
+  "changes": [
+    "Full-width mountain-to-forest scenery throughout arbitrary-length blog pages",
+    "No houses or town backdrop on blog routes",
+    "Single continuous trail with vertically repeating forest and smaller side mountains",
+    "Full-height flex page layout keeps footer at document bottom"
+  ],
+  "checks": {
+    "types": "0 errors, warnings, hints",
+    "productionContentTests": "passed; temporary posts removed, RSS absent",
+    "browser": ".impeccable/review/blog-forest-checks.json",
+    "viewports": [
+      [
+        320,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        1351,
+        1340
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "emptyAndArticleFooterCases": 8,
+    "documentation": "PRODUCT.md and DESIGN.md verified against source; tokens unchanged"
+  },
+  "preexistingDrift": ".impeccable/design.json is stale; not regenerated outside task scope"
+}

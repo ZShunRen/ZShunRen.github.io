@@ -1,0 +1,21 @@
+{
+  "disposition": "ship",
+  "scope": "Homepage descent and weather refinement",
+  "review": "Independent full scoped motion review returned ship with no material findings.",
+  "features": [
+    "Stronger independent scroll depths across peaks, trees, trails and buildings",
+    "One gust rhythm with different particle exposure per section",
+    "Swaying pines and trail sign",
+    "Town smoke, recessed windows, radial light spill onto snow",
+    "Garden scenery and lamps around About",
+    "Warm project hover and focus reflection",
+    "Scenery pause, reduced motion, offscreen and hidden-document suspension"
+  ],
+  "checks": "motion-checks.json",
+  "detector": "motion-detector.json",
+  "limitations": [
+    "Browser checks at 1440px and 390px, not physical-device frame-rate profiling.",
+    "Screenshots establish geometry; timing evidence comes from runtime state and change checks.",
+    "Pre-existing design-token detector advisories were reported, not repaired as part of motion work."
+  ]
+}

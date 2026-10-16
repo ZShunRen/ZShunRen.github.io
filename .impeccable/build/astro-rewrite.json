@@ -1,0 +1,50 @@
+{
+  "workflow": "code-led migration of the established alpine design",
+  "target": "src/pages/index.astro",
+  "status": "complete locally",
+  "stack": [
+    "Astro",
+    "React",
+    "Motion",
+    "Markdown",
+    "Pages CMS"
+  ],
+  "rss": "removed at user request: package, endpoint, metadata, subscription link",
+  "finish": {
+    "disposition": "ship",
+    "scope": "Integrated source and supplied desktop/mobile browser evidence; live hosting and CMS account setup unverified",
+    "review": ".impeccable/review/astro-rewrite-finish.md",
+    "documentation": [
+      "PRODUCT.md",
+      "DESIGN.md",
+      ".impeccable/design.json"
+    ]
+  },
+  "validation": {
+    "cleanInstall": "npm ci --offline passed; audit 0 vulnerabilities",
+    "types": "npm run check: 0 errors, warnings, hints",
+    "build": "npm run build passed",
+    "content": "npm run test:blog passed; temporary posts removed",
+    "browser": ".impeccable/review/rewrite-browser-checks.json",
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "portfolioParagraphsPreserved": 29,
+    "preview": {
+      "url": "http://127.0.0.1:4173/",
+      "home": 200,
+      "blog": 200,
+      "rss": 404
+    }
+  },
+  "externalSetup": [
+    "Commit/push the rewrite",
+    "Select GitHub Actions as the repository Pages source",
+    "Authorize the Pages CMS GitHub App for the repository",
+    "Verify first live deployment and CMS save"
+  ],
+  "priorRasterComps": "Rejected and archived; no abandoned fidelity gates claimed as passed"
+}

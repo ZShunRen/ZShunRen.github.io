@@ -1,0 +1,202 @@
+{
+  "title": "Optimistic cyberpunk · Shun Ren",
+  "question": "Choose the atmosphere and composition to develop. Existing content stays; only the subtitle changes.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Luminous connections",
+      "thesis": "The portfolio follows a quiet illuminated route through real projects.",
+      "lineage": "Blue-hour transit wayfinding and waterfront light trails",
+      "palette": [
+        "#091f39",
+        "#268bec",
+        "#f5b766",
+        "#eef6ff"
+      ],
+      "materials": [
+        "deep blue open space",
+        "fine luminous route lines"
+      ],
+      "viewport": "Shun Ren anchors a route linking two featured projects, with a restrained city horizon below.",
+      "risk": "Route graphics need restraint to avoid looking like a network dashboard.",
+      "comp": ".impeccable/mocks/decision/connections.png",
+      "raised": [
+        {
+          "from": "Linocut broadside",
+          "raise": "Give one focal composition the full width rather than scattering equal cards."
+        },
+        {
+          "from": "Telop caption field",
+          "raise": "Make hierarchy legible immediately without adding animated clutter."
+        },
+        {
+          "from": "Build instructions",
+          "raise": "Keep exploration order explicit."
+        },
+        {
+          "from": "Forging",
+          "raise": "Make project transitions decisive and bounded."
+        },
+        {
+          "from": "Cathode gauze",
+          "raise": "Use light consistently to identify the active link."
+        },
+        {
+          "from": "Night flight",
+          "raise": "Keep every persistent label calmly readable."
+        }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Blue-hour terrace",
+      "kicker": "IMPECCABLE’S PICK",
+      "thesis": "An open waterfront city sets the atmosphere while the work stays in the foreground.",
+      "lineage": "Contemporary waterfront architecture at blue hour",
+      "palette": [
+        "#0b2037",
+        "#55b5ef",
+        "#ffc47a",
+        "#f0f7fb"
+      ],
+      "materials": [
+        "open sky",
+        "warm architectural light"
+      ],
+      "viewport": "A wide nameplate and two project entries sit above an airy, low-density city panorama.",
+      "risk": "The cinematic city hero is familiar; the project-led composition must give it individuality.",
+      "comp": ".impeccable/mocks/decision/terrace.png"
+    },
+    {
+      "id": "posters-covers-sleeves-taller-grafica-linocut",
+      "label": "Linocut broadside",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#102a46",
+        "#f5bd78"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "Its forceful relief imagery weakens both the requested atmosphere and project clarity.",
+      "kept": "Full-width compositional confidence."
+    },
+    {
+      "id": "variety-telop-caption-field",
+      "label": "Caption field",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#173f71",
+        "#ffbd70"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "Reactive captions compete with the calm content and requested city atmosphere.",
+      "kept": "Immediate typographic hierarchy."
+    },
+    {
+      "id": "games-toys-physics-play-brick-build-instructions",
+      "label": "Assembly booklet",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#8fcbf0",
+        "#204368"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "Assembly steps misrepresent the portfolio as a tutorial.",
+      "kept": "Clear exploration order."
+    },
+    {
+      "id": "metal-forging-patina-blacksmith-scale-shower",
+      "label": "Forge sequence",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#132437",
+        "#f2b26d"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "Impact-driven industrial scenes contradict the positive, quiet city brief.",
+      "kept": "Decisive transitions."
+    },
+    {
+      "id": "operate-b-struck-cathode-gauze",
+      "label": "Cathode light",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#10253b",
+        "#ffb66d"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "Overlapping ghost labels obscure project reading and feel more laboratory than open city.",
+      "kept": "Consistent active-state lighting."
+    },
+    {
+      "id": "signals-instruments-night-flight-six-pack",
+      "label": "Night instruments",
+      "verdict": "declined",
+      "thesis": "Translate this visual grammar into a portfolio.",
+      "palette": [
+        "#112638",
+        "#e8f4fd"
+      ],
+      "materials": [
+        "Translated into the user’s blue-hour palette"
+      ],
+      "viewport": "Name, project links, and portfolio sections arranged in the source grammar.",
+      "risk": "Conflicts with the requested calm city atmosphere.",
+      "case": "A six-gauge cockpit turns real projects into artificial telemetry.",
+      "kept": "Calm persistent readability."
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "steer": true,
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "Quiet city portfolio",
+    "thesis": "A conventional portfolio with understated blue-hour city light.",
+    "palette": [
+      "#101d30",
+      "#82c7f5",
+      "#f5bd78",
+      "#f1f6fb"
+    ],
+    "materials": [
+      "clear editorial surfaces",
+      "subtle neon edges"
+    ],
+    "viewport": "A simple introduction, existing skills, and clear project entries with a narrow skyline band.",
+    "risk": "More familiar and less distinctive.",
+    "comp": ".impeccable/mocks/decision/quiet.png"
+  }
+}

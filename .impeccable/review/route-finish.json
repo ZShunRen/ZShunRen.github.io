@@ -1,0 +1,18 @@
+{
+  "disposition": "ship",
+  "scope": "Visual continuity at all homepage section boundaries",
+  "cause": "Independent scene road geometry, missing About road, cropped rectangular terrain layers and independent transforms on connected ground.",
+  "fix": "One measured page-wide cubic route over one snow ground, background terrain below the route and foreground scenery above it. Connected ground is excluded from parallax.",
+  "evidence": [
+    "route-before-measurements.json",
+    "route-checks.json",
+    "route-motion-checks.json",
+    "route-live-{1440,390}-{skills,project_header,about,contact}.png",
+    "route-final-{1440,390}-full.png"
+  ],
+  "review": "Fresh independent seam/continuity review returned ship; mobile contact content briefly occludes the road as a foreground panel, with visible continuation.",
+  "limitations": [
+    "Scoped seam review, not a full accessibility audit.",
+    "Recorded browser tests rather than real-device profiling."
+  ]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "width": 320,
+    "routeStableAcrossScrollPauseAndReducedMotion": true,
+    "noOverflow": true,
+    "noOldRoads": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "routeStableAcrossScrollPauseAndReducedMotion": true,
+    "noOverflow": true,
+    "noOldRoads": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "routeStableAcrossScrollPauseAndReducedMotion": true,
+    "noOverflow": true,
+    "noOldRoads": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "routeStableAcrossScrollPauseAndReducedMotion": true,
+    "noOverflow": true,
+    "noOldRoads": true,
+    "errors": []
+  },
+  {
+    "resizeUpdatesRoute": true
+  }
+]

@@ -1,0 +1,19 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import BlogLandscape from "../components/BlogLandscape.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  article?: boolean;
+}
+const { title, description, image, article = false } = Astro.props;
+---
+
+<BaseLayout {title} {description} {image} {article} current="blog" bodyClass="inner-page blog-page">
+  <main id="main" class={article ? "article-shell" : "blog-shell"}>
+    <BlogLandscape />
+    <slot />
+  </main>
+</BaseLayout>

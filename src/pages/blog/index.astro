@@ -1,0 +1,22 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import PostList from "../../components/PostList.astro";
+import { getPublishedPosts } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+---
+
+<BlogLayout
+  title="Blog"
+  description="Personal records of my security & software engineering journey."
+>
+    <header class="page-intro blog-intro">
+      <div class="page-heading">
+        <h1>Field notes</h1>
+        <p>Writing on security and software. Primarily meant for me</p>
+      </div>
+    </header>
+    <section class="blog-index inner-content" aria-label="Published posts">
+      <PostList {posts} />
+    </section>
+</BlogLayout>

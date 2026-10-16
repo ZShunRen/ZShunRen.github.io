@@ -1,0 +1,52 @@
+---
+interface Props {
+  images: string[];
+  title: string;
+}
+
+const { images, title } = Astro.props;
+---
+
+<div class="gallery" data-gallery data-images={JSON.stringify(images)} data-title={title}>
+  <img
+    data-gallery-image
+    src={images[0]}
+    alt={`${title} screenshot 1 of ${images.length}`}
+    width="960"
+    height="600"
+  />
+  {
+    images.length > 1 && (
+      <div class="gallery-controls" data-gallery-controls hidden>
+        <button type="button" data-step="-1" aria-label="Previous screenshot">←</button>
+        <span class="gallery-count" data-gallery-count aria-live="polite">1 / {images.length}</span>
+        <button type="button" data-step="1" aria-label="Next screenshot">→</button>
+      </div>
+    )
+  }
+  <noscript>
+    {images.slice(1).map((image) => (
+      <img src={image} alt={`${title} additional screenshot`} loading="lazy" width="960" height="600" />
+    ))}
+  </noscript>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-gallery]").forEach((gallery) => {
+    const images = JSON.parse(gallery.dataset.images ?? "[]") as string[];
+    const image = gallery.querySelector<HTMLImageElement>("[data-gallery-image]");
+    const controls = gallery.querySelector<HTMLElement>("[data-gallery-controls]");
+    const count = gallery.querySelector<HTMLElement>("[data-gallery-count]");
+    if (!image || !controls || !count || images.length < 2) return;
+    let index = 0;
+    controls.hidden = false;
+    controls.querySelectorAll<HTMLButtonElement>("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        index = (index + Number(button.dataset.step) + images.length) % images.length;
+        image.src = images[index];
+        image.alt = `${gallery.dataset.title} screenshot ${index + 1} of ${images.length}`;
+        count.textContent = `${index + 1} / ${images.length}`;
+      });
+    });
+  });
+</script>

@@ -1,0 +1,16 @@
+---
+import ProjectDetail from "../../components/ProjectDetail.astro";
+import projects from "../../data/projects.json";
+
+const project = projects.spotifyTimeMachine;
+---
+
+<ProjectDetail
+  title={project.title}
+  description={project.description}
+  repository={project.repository}
+  paragraphs={project.paragraphs}
+  language="Python"
+  projectDate="November, 2021"
+  images={["/images/spotify-time-machine.png", "/images/github-time-machine.png"]}
+/>

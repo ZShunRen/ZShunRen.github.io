@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Gallery from "./Gallery.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  repository: string;
+  paragraphs: string[];
+  language: string;
+  projectDate: string;
+  images: string[];
+}
+
+const { title, description, repository, paragraphs, language, projectDate, images } = Astro.props;
+---
+
+<BaseLayout {title} {description} current="projects">
+  <main id="main">
+    <header class="page-intro">
+      <div class="page-heading">
+        <h1>{title}</h1>
+        <a class="text-link" href="/#project_header">
+          Back to projects
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <section class="inner-content project-detail">
+      <Gallery {images} {title} />
+      <div class="project-information">
+        <h2>Project information</h2>
+        <ul>
+          <li><strong>Language</strong>: {language}</li>
+          <li><strong>Project date</strong>: {projectDate}</li>
+          <li><strong>Project URL</strong>: <a href={repository}>Github Code</a></li>
+        </ul>
+        <h2>{title}</h2>
+        {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

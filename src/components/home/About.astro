@@ -1,0 +1,399 @@
+---
+import profile from "../../data/profile.json";
+
+const birthDate = new Date("2002-12-19");
+const today = new Date();
+
+let age = today.getFullYear() - birthDate.getFullYear();
+
+const hasHadBirthday =
+  today.getMonth() > birthDate.getMonth() ||
+  (today.getMonth() === birthDate.getMonth() &&
+    today.getDate() >= birthDate.getDate());
+
+if (!hasHadBirthday) age--;
+---
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div
+          class="garden-environment scene-environment"
+          data-environment="garden"
+          aria-hidden="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1600 1350"
+            class="scene-svg garden-art scene-desktop terrain-backdrop"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M0 100C150 250-30 400 65 570S40 1000 0 1250ZM1600 100C1450 250 1630 480 1540 730S1560 1100 1600 1250Z"
+              fill="#dce6dc"
+            /></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1600 1350"
+            class="scene-svg garden-art scene-desktop"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <defs>
+              <radialGradient id="garden-window-light">
+                <stop offset="0%" stop-color="#fff6ce" stop-opacity="1" />
+                <stop offset="48%" stop-color="#f4cd83" stop-opacity="1" />
+                <stop offset="100%" stop-color="#c48146" stop-opacity="1" />
+              </radialGradient>
+              <radialGradient id="garden-snow-light">
+                <stop offset="0%" stop-color="#f7cc80" stop-opacity=".65" />
+                <stop offset="48%" stop-color="#f1c782" stop-opacity=".22" />
+                <stop offset="100%" stop-color="#f1c782" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="garden-window-halo">
+                <stop offset="0%" stop-color="#ffdc95" stop-opacity=".5" />
+                <stop offset="100%" stop-color="#ffdc95" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <g data-depth=".8" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(45 150) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#7c9683"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="1" class="travel-tree">
+              <g transform="translate(1550 300) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#66877c"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(45 450) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#52796f"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="1" class="travel-tree">
+              <g transform="translate(1550 600) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#7c9683"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(45 750) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#66877c"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="1" class="travel-tree">
+              <g transform="translate(1550 900) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#52796f"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(45 1050) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#7c9683"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g data-depth=".8" data-tree-side="1" class="travel-tree">
+              <g transform="translate(1550 1200) scale(.9)">
+                <g class="wind-tree">
+                  <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                  <path
+                    d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                    fill="#66877c"
+                  />
+                  <path
+                    d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                    fill="#eef4ed"
+                  />
+                </g>
+              </g>
+            </g>
+            <g transform="translate(150 380)" class="garden-lamp">
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="70"
+                ry="16"
+                fill="url(#garden-snow-light)"
+                class="light-spill"
+              />
+              <path d="M-3 0v-123h6V0zM-14-126h28l-6-16H-8z" fill="#758984" />
+              <rect
+                x="-9"
+                y="-124"
+                width="18"
+                height="25"
+                fill="url(#garden-window-light)"
+                class="window-light"
+                style="--light-delay: -0s"
+              />
+            </g>
+            <g transform="translate(1460 740)" class="garden-lamp">
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="70"
+                ry="16"
+                fill="url(#garden-snow-light)"
+                class="light-spill"
+              />
+              <path d="M-3 0v-123h6V0zM-14-126h28l-6-16H-8z" fill="#758984" />
+              <rect
+                x="-9"
+                y="-124"
+                width="18"
+                height="25"
+                fill="url(#garden-window-light)"
+                class="window-light"
+                style="--light-delay: -2s"
+              />
+            </g>
+            <g transform="translate(135 1130)" class="garden-lamp">
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="70"
+                ry="16"
+                fill="url(#garden-snow-light)"
+                class="light-spill"
+              />
+              <path d="M-3 0v-123h6V0zM-14-126h28l-6-16H-8z" fill="#758984" />
+              <rect
+                x="-9"
+                y="-124"
+                width="18"
+                height="25"
+                fill="url(#garden-window-light)"
+                class="window-light"
+                style="--light-delay: -4s"
+              />
+            </g></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 390 1350"
+            class="scene-svg garden-art scene-mobile terrain-backdrop"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          /><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 390 1350"
+            class="scene-svg garden-art scene-mobile"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <defs>
+              <radialGradient id="garden-mobile-window-light">
+                <stop offset="0%" stop-color="#fff6ce" stop-opacity="1" />
+                <stop offset="48%" stop-color="#f4cd83" stop-opacity="1" />
+                <stop offset="100%" stop-color="#c48146" stop-opacity="1" />
+              </radialGradient>
+              <radialGradient id="garden-mobile-snow-light">
+                <stop offset="0%" stop-color="#f7cc80" stop-opacity=".65" />
+                <stop offset="48%" stop-color="#f1c782" stop-opacity=".22" />
+                <stop offset="100%" stop-color="#f1c782" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="garden-mobile-window-halo">
+                <stop offset="0%" stop-color="#ffdc95" stop-opacity=".5" />
+                <stop offset="100%" stop-color="#ffdc95" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <g data-depth=".7" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(5 130) scale(.42)">
+                <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                <path
+                  d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                  fill="#7c9683"
+                />
+                <path
+                  d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                  fill="#eef4ed"
+                />
+              </g>
+            </g>
+            <g data-depth=".7" data-tree-side="1" class="travel-tree">
+              <g transform="translate(385 380) scale(.42)">
+                <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                <path
+                  d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                  fill="#66877c"
+                />
+                <path
+                  d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                  fill="#eef4ed"
+                />
+              </g>
+            </g>
+            <g data-depth=".7" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(5 630) scale(.42)">
+                <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                <path
+                  d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                  fill="#52796f"
+                />
+                <path
+                  d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                  fill="#eef4ed"
+                />
+              </g>
+            </g>
+            <g data-depth=".7" data-tree-side="1" class="travel-tree">
+              <g transform="translate(385 880) scale(.42)">
+                <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                <path
+                  d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                  fill="#7c9683"
+                />
+                <path
+                  d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                  fill="#eef4ed"
+                />
+              </g>
+            </g>
+            <g data-depth=".7" data-tree-side="-1" class="travel-tree">
+              <g transform="translate(5 1130) scale(.42)">
+                <path d="M-4 0h8v-122h-8z" fill="#6b7771" />
+                <path
+                  d="M0-160-26-110h12l-31 51h17L-57-10H57L28-59h17l-31-51h12z"
+                  fill="#66877c"
+                />
+                <path
+                  d="m0-160-19 36 19-5 17 5zm-14 50-21 35 35-7 29 7-17-28-12 4zM-28-59-46-26l46-9 40 9-19-32-21 7z"
+                  fill="#eef4ed"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <canvas class="wind-snow" aria-hidden="true"></canvas>
+        <div class="reading-surface">
+          <h2 id="about-title">About me</h2>
+          <blockquote>
+            “The only man who never makes mistakes is the man who never does anything.”<cite>— Theodore Roosevelt</cite>
+          </blockquote>
+          <div class="bio-grid">
+            <img
+              class="portrait"
+              src="/images/me.jpg"
+              alt="Shun Ren"
+              width="260"
+              height="330"
+              loading="lazy"
+            />
+            <div>
+              <h3>Nerdy guy, sometimes does cybersec and swe stuff.</h3>
+              {profile.about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+              <dl class="personal-details">
+                <div>
+                  <dt>Where I am based out of</dt>
+                  <dd>Singapore</dd>
+                </div>
+                <div>
+                  <dt>Age</dt>
+                  <dd>{age}</dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href={`mailto:${profile.email}`}
+                      >{profile.email}</a
+                    >
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="education">
+            <h2>Educational Qualifications</h2>
+            <article class="education-row">
+              <img
+                src="/images/nus-logo.webp"
+                alt="National University of Singapore crest"
+                width="64"
+                height="72"
+                loading="lazy"
+              />
+              <div>
+                <h3>
+                  National University of Singapore (NUS) - School of Computing
+                </h3>
+                <p class="date">2023-2027</p>
+                <p>
+                  I am currently pursuing a Bachelor of Computing in Computer
+                  Science (Honours) at NUS. My expected graduation year is 2027.
+                  I won't yap about it here, go to my Linkedin if you want to see more details about my education.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
