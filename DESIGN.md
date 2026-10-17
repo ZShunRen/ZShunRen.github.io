@@ -168,9 +168,9 @@ One page-spanning decorative SVG route in `src/components/home/JourneyGround.ast
 
 The system uses no box shadows. Tonal mountain layers, overlapping snow, tree scale, and the town path create scenic depth; opaque paper surfaces create reading separation without simulated elevation. A fixed, pointer-transparent paper SVG overlay at opacity 0.3 adds sparse texture without blocking interaction.
 
-Native scrolling moves distant summit peaks and independent tree and building layers through the forest, town, garden, and contact square. Progress is clamped per section: summit peaks descend at different depths; foreground scenery moves vertically and scales gently, while nearby trees diverge sideways along the trail. Connected snowbanks, the shared route, and reading surfaces stay fixed in document coordinates. Only independent scenic layers carry scroll-depth transforms.
+Native scrolling moves distant summit peaks at different depths. Trees and houses remain stationary in document coordinates throughout the summit, forest, town, garden, and contact square; they neither translate, scale, nor bend with wind. This keeps their authored placement stable relative to the connected snowbanks, shared route, and reading surfaces. Only `.terrain-layer` elements participate in scroll-depth transforms.
 
-One shared gust clock connects the section-specific wind-and-snow canvases, pine sway, and chimney drift. The same gust drives foliage bend and horizontal smoke displacement. Weather is strongest at the summit, sheltered in the forest, and quieter around the town and garden. Exposed summit and forest snow uses directional strokes, with longer tails in stronger gusts; sheltered town and garden snow uses small round flakes. Powder sweeps appear in the exposed summit and forest. Particle counts are lower on small screens, and canvas backing resolution is capped at 1.5 device pixel ratio. The decorative canvases do not receive pointer input.
+One shared gust clock connects the section-specific wind-and-snow canvases and chimney drift. Trees do not sway; the gust still drives horizontal smoke displacement. Weather is strongest at the summit, sheltered in the forest, and quieter around the town and garden. Exposed summit and forest snow uses directional strokes, with longer tails in stronger gusts; sheltered town and garden snow uses small round flakes. Powder sweeps appear in the exposed summit and forest. Particle counts are lower on small screens, and canvas backing resolution is capped at 1.5 device pixel ratio. The decorative canvases do not receive pointer input.
 
 Warm house windows combine recessed frames, radial light, soft halos, and light spilling onto snow. Town arrival increases their light from 0.65 to 1 as section progress advances. Hearth light varies gently over 8s; garden lamps use an 11s cycle. Chimney wisps drift over 6s with staggered delays; their horizontal drift follows the shared gust rather than a fixed endpoint. The forest trail sign sways over 7s while its environment is visible. Project screenshot frames gain a warm, low-opacity light wash on row hover or keyboard focus, fading over 250ms.
 
@@ -180,7 +180,7 @@ The top-of-page motion toggle pauses weather and scenic animation while preservi
 
 The homepage depth order belongs to the shared main stacking context: terrain backdrops at -2, the continuous route at -1, foreground tree and building SVGs at 0, weather at 1, and reading surfaces at 2. Preserve these relationships across section boundaries so local scenery does not paint over or hide the road.
 
-**The Connected Ground Rule.** Keep the route and connected snowbanks outside parallax transforms; share road geometry across sections and move only independent scenery around it.
+**The Connected Ground Rule.** Keep the route and connected snowbanks outside parallax transforms; share road geometry across sections and keep foreground trees and houses stationary around it.
 
 Three low-opacity geometric SVG cloud groups drift across the summit terrain at staggered durations (62s, 73s, and 84s), moving between -25px and 55px horizontally with alternate linear loops. They share the existing visibility, pause, and reduced-motion controls; they do not move reading surfaces or the connected ground.
 
@@ -202,9 +202,9 @@ Standalone actions use bold small text, a bottom border, and an inline SVG arrow
 
 ### Navigation
 
-All pages render the same `src/components/Header.astro` through `BaseLayout.astro`, with Home, About me, Projects, and Blog in one shared link list. The header uses normal document flow and the winter-sky surface on both home and inner pages. Below 420px the wordmark occupies the first row and all four navigation links share a second row; the wordmark stays on one line. The scenery toggle belongs inside the summit below the navbar. Trail measurements cache the main content’s document offset so the traveler stays aligned after the shared header.
+All pages render the same `src/components/Header.astro` through `BaseLayout.astro`, with Home, About me, CTF Rankings, and Blog in one shared link list. The header uses normal document flow and the winter-sky surface on both home and inner pages. Below 700px the wordmark and social buttons share the first row, and all four navigation links share a second row; the wordmark stays on one line. The scenery toggle belongs inside the summit below the navbar. Trail measurements cache the main content’s document offset so the traveler stays aligned after the shared header.
 
-A small mountain wordmark faces a simple visible link row for Home, About me, Projects, and Blog. The current item and hovered links gain an underline; there is no invented selected pill or mobile drawer. A skip link becomes visible on keyboard focus. Retain semantic links and `aria-current`.
+A small mountain wordmark faces a simple visible link row for Home, About me, CTF Rankings, and Blog. The current item and hovered links gain an underline; there is no invented selected pill or mobile drawer. A skip link becomes visible on keyboard focus. Retain semantic links and `aria-current`.
 
 ### Reading surfaces and project rows
 
@@ -271,3 +271,29 @@ No form fields, chips, or dialogs currently exist; do not infer their design fro
 Blog index, tag archives, and articles share `src/layouts/BlogLayout.astro` and `src/components/BlogLandscape.astro`. Their landscape spans the full main content width and height rather than a boxed banner: `public/images/alpine/blog-peaks.svg` begins the descent, while `blog-forest.svg` repeats down the margins with pines and small snow-covered mountains. The forest margins use curved snow contours and transparent inner/top edges; the route is one stretched SVG path, never separate road tiles. Blog scenery contains no houses or town and follows native document scrolling without an autonomous animation loop. Opaque paper surfaces keep writing legible.
 
 The document body is a flex column with a minimum height of `100svh`; the main content grows to use remaining space, and header/footer retain their natural sizes. This keeps the footer at the end of the document on empty, short, tall-viewport, and long-article pages. Print removes the decorative landscape and restores block flow.
+
+
+## Personal links and theme story
+
+The shared navbar places LinkedIn, GitHub, and Email immediately to the right of the name, aligned on the same center line with a 12px gap. `SocialLinks.astro` uses profile destinations, accessible labels and titles, and prominent 22px stroke icons in 44px circular paper-backed buttons with a subtle border. Hover or keyboard focus enlarges only the icon to 1.15 over 160ms; reduced motion removes the transform and transition while retaining focus outlines. The footer contains only the Back to top link, aligned to the right.
+
+`ThemeNote.astro` adds a small “A memory of Zakopane” section beneath education in the homepage About section. A simple divider and existing typography keep it part of the reading surface. Its heading and paragraphs live in `profile.theme` and are editable in Pages CMS under Site theme story. The text records the owner's supplied memory of winter hiking during exchange and the wish to revisit that peaceful feeling from Singapore.
+
+
+## Homepage CTF rankings
+
+The homepage sequence is summit → short forest trail → CTF rankings in the town → About/garden → contact square. The forest remains a 360px scenic transition (300px on mobile), with its former My Skills content removed. `CtfRankings.astro` shows three ordered results in one paper reading surface with simple dividers. Event and optional category appear beside the placement. The title includes the Lucide flag icon; its source asset and license are in `public/icons`.
+
+The section heading is “My past CTF rankings,” with a “CTF writeups & blog” link to `/blog/` below the results. The current anchor is `#ctf-rankings`; `#project_header` and `#work-experience` remain compatibility targets. Navbar, forest sign, and blog empty-state links point to the rankings anchor. The summit has one quick link, “About me,” pointing to `#about`. Trail geometry uses the rankings section ID and continues uninterrupted through the shorter forest transition. `src/data/ctf-rankings.json` owns the content and Pages CMS exposes its ordered rankings. Older project detail URLs remain available.
+
+
+## Site icon
+
+The shared layout uses miniature versions of the owner-supplied red-hooded pixel-art portrait as the browser icon. PNGs at 16px and 32px and a 180px Apple touch icon live in `public/icons`; `public/favicon.ico` includes 16px, 32px, and 48px variants. These are direct resizes of the supplied artwork. The mountain wordmark in the navbar remains the site identity within the alpine interface.
+
+
+## Clear trail and homepage About
+
+`keepTrailClear` runs after the continuous route is measured, on initial layout, font readiness, and resize. It compares complete tree and chalet bounds with the route and reserves the outer road edge plus a quiet margin. Objects that intrude are hidden as whole groups, including their light and smoke; no mask slices silhouettes or paints a road across a house. This placement pass does not run on scroll. Visibility preserves geometry so objects can return when a different viewport provides enough room. Snow, smoke, windows, distant peaks, and the traveler keep their existing motion.
+
+About me lives only at `/#about` on the homepage. Shared navigation and the summit quick link scroll there. The `/about` route is removed entirely. The older `/webpages/about_me.html` compatibility link points directly to the homepage section.

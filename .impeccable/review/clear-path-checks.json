@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "about": "Homepage anchor only; old route 404",
+      "hiddenSceneryStable": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "about": "Homepage anchor only; old route 404",
+      "hiddenSceneryStable": true,
+      "overflow": false
+    },
+    {
+      "resizedTo": 390,
+      "hidden": 11
+    },
+    {
+      "resizedTo": 1920,
+      "hidden": 7
+    },
+    {
+      "resizedTo": 600,
+      "hidden": 11
+    },
+    {
+      "resizedTo": 1440,
+      "hidden": 12
+    }
+  ],
+  "errors": [],
+  "clearance": [
+    {
+      "width": 320,
+      "visible": 19,
+      "collisions": []
+    },
+    {
+      "width": 390,
+      "visible": 19,
+      "collisions": []
+    },
+    {
+      "width": 600,
+      "visible": 19,
+      "collisions": []
+    },
+    {
+      "width": 768,
+      "visible": 55,
+      "collisions": []
+    },
+    {
+      "width": 1024,
+      "visible": 41,
+      "collisions": []
+    },
+    {
+      "width": 1440,
+      "visible": 46,
+      "collisions": []
+    },
+    {
+      "width": 1920,
+      "visible": 51,
+      "collisions": []
+    }
+  ]
+}

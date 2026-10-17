@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "overflow": false,
+      "footerBottom": 4468.421875,
+      "height": 4468
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "footerBottom": 4138.921875,
+      "height": 4139
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "footerBottom": 4115.640625,
+      "height": 4116
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "footerBottom": 4075.8125,
+      "height": 4076
+    }
+  ],
+  "errors": []
+}

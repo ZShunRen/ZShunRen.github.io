@@ -1,0 +1,95 @@
+{
+  "out": [
+    {
+      "width": 320,
+      "path": "/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 5882.109375,
+      "documentHeight": 5882
+    },
+    {
+      "width": 320,
+      "path": "/about/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 2802.875,
+      "documentHeight": 2803
+    },
+    {
+      "width": 320,
+      "path": "/blog/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 1092.59375,
+      "documentHeight": 1093
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 5552.78125,
+      "documentHeight": 5553
+    },
+    {
+      "width": 390,
+      "path": "/about/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 2477.03125,
+      "documentHeight": 2477
+    },
+    {
+      "width": 390,
+      "path": "/blog/",
+      "overflow": false,
+      "iconX": 53,
+      "nameX": 53,
+      "belowName": true,
+      "footerBottom": 1067.40625,
+      "documentHeight": 1067
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "overflow": false,
+      "iconX": 168,
+      "nameX": 168,
+      "belowName": true,
+      "footerBottom": 5196,
+      "documentHeight": 5196
+    },
+    {
+      "width": 1440,
+      "path": "/about/",
+      "overflow": false,
+      "iconX": 168,
+      "nameX": 168,
+      "belowName": true,
+      "footerBottom": 2037.078125,
+      "documentHeight": 2037
+    },
+    {
+      "width": 1440,
+      "path": "/blog/",
+      "overflow": false,
+      "iconX": 168,
+      "nameX": 168,
+      "belowName": true,
+      "footerBottom": 1116.109375,
+      "documentHeight": 1116
+    }
+  ],
+  "errors": []
+}

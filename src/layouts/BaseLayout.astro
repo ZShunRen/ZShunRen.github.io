@@ -8,7 +8,7 @@ interface Props {
   title?: string;
   description?: string;
   bodyClass?: string;
-  current?: "home" | "about" | "projects" | "blog";
+  current?: "home" | "about" | "ctf" | "blog";
   image?: string;
   article?: boolean;
 }
@@ -40,8 +40,10 @@ const socialImage = image ? new URL(image, Astro.site) : undefined;
     {socialImage && <meta property="og:image" content={socialImage} />}
     <meta name="twitter:card" content={socialImage ? "summary_large_image" : "summary"} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/images/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/tech-priest-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/tech-priest-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/tech-priest-touch.png" />
     <title>{pageTitle}</title>
   </head>
   <body class={bodyClass} id="top-part">

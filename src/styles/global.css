@@ -160,8 +160,53 @@ p:last-child {
   padding: 27px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
+}
+.nav-identity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.social-links a:hover,
+.social-links a:focus-visible {
+  background: var(--snow);
+  border-color: var(--pine);
+}
+.social-links svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.8;
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-links a:hover svg,
+.social-links a:focus-visible svg {
+  transform: scale(1.15);
+}
+@media (prefers-reduced-motion: reduce) {
+  .social-links svg {
+    transition: none;
+  }
+  .social-links a:hover svg,
+  .social-links a:focus-visible svg {
+    transform: none;
+  }
 }
 .wordmark {
   display: inline-flex;
@@ -368,6 +413,58 @@ p:last-child {
   border-radius: var(--radius);
   margin-bottom: 28px;
 }
+.ctf-rankings-section h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.ctf-flag {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--pine);
+}
+.ctf-flag svg {
+  width: 28px;
+  height: 28px;
+}
+.ctf-results {
+  padding: 0 48px;
+  background: var(--paper);
+  border-radius: var(--radius);
+}
+.ctf-rankings-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ctf-blog-link {
+  margin-bottom: 32px;
+}
+.ctf-ranking {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+.ctf-ranking:last-child {
+  border-bottom: 0;
+}
+.ctf-ranking h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.ctf-category {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.ctf-placement {
+  font-size: 16px;
+  white-space: nowrap;
+  color: var(--pine);
+}
 .project-image {
   display: block;
   border-radius: 4px;
@@ -445,6 +542,18 @@ cite {
 .education {
   margin-top: 60px;
 }
+.theme-note {
+  margin-top: var(--space-lg);
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.theme-note h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.theme-note p {
+  max-width: 68ch;
+}
 .education h2 {
   font-size: 1.5rem;
   margin-bottom: 30px;
@@ -509,16 +618,12 @@ cite {
 }
 .site-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 25px;
   padding: 32px 40px;
   background: #e6ece2;
   font-size: 12px;
-}
-.site-footer > div {
-  display: flex;
-  gap: 24px;
 }
 .site-footer a {
   text-decoration: none;
@@ -770,6 +875,17 @@ cite {
     padding: 18px;
     gap: 22px;
   }
+  .ctf-results {
+    padding: 0 24px;
+  }
+  .ctf-ranking {
+    gap: 16px;
+    padding: 28px 0;
+  }
+  .ctf-ranking h3,
+  .ctf-placement {
+    font-size: 14px;
+  }
   .project-row > div {
     padding: 0 4px 10px;
   }
@@ -833,12 +949,6 @@ cite {
     padding: 28px 24px;
     flex-wrap: wrap;
     font-size: 12px;
-  }
-  .site-footer .wordmark {
-    flex-basis: 100%;
-  }
-  .site-footer > div {
-    gap: 20px;
   }
   .page-intro {
     margin: 0 20px;
@@ -961,6 +1071,9 @@ cite {
 .scene-environment {
   pointer-events: none;
 }
+.scene-environment [data-trail-obstructed] {
+  visibility: hidden;
+}
 .scene-svg {
   display: block;
   width: 100%;
@@ -970,14 +1083,8 @@ cite {
 .scene-mobile {
   display: none;
 }
-.terrain-layer,
-.travel-tree {
+.terrain-layer {
   transform-origin: 50% 100%;
-}
-.wind-tree {
-  transform-box: fill-box;
-  transform-origin: 50% 100%;
-  transform: skewX(var(--wind-bend, 0deg));
 }
 .forest-section {
   background-image: none;
@@ -1248,6 +1355,15 @@ cite {
 .home .about-section,
 .home .contact-section {
   overflow: visible;
+}
+.home .trail-section {
+  height: 360px;
+  padding: 0;
+}
+@media (max-width: 600px) {
+  .home .trail-section {
+    height: 300px;
+  }
 }
 .home .scene-environment {
   z-index: auto;
@@ -1677,7 +1793,7 @@ cite {
     font-size: 12px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .navigation {
     flex-wrap: wrap;
     gap: 8px;

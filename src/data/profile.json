@@ -1,16 +1,23 @@
 {
   "name": "Shun Ren",
   "subtitle": "Singapore-based security & software engineer",
-  "description": "Shun Ren — Singapore-based security & software engineer. Projects, skills, and background.",
+  "description": "Shun Ren — Singapore-based security & software engineer. CTF rankings, writing, and background.",
   "email": "zhengshunren@outlook.com",
   "github": "https://github.com/ZShunRen",
-  "linkedin": "https://www.linkedin.com/in/zheng-shun-ren-43b919249/",
+  "linkedin": "https://www.linkedin.com/in/zheng-shun-ren/",
+  "theme": {
+    "title": "Why the winter mountain theme?",
+    "paragraphs": [
+      "This site's theme comes from my fond memories of traveling and hiking in the Zakopane mountains in winter while on exchange.",
+      "That kind of peace and quiet is hard to come by in Singapore. I want to preserve that positive memory every time I visit this site."
+    ]
+  },
   "about": {
     "paragraphs": [
       "Hello there. You can call me Shun.",
-      "I'm am aspiring cyber security programmer still paving my own path through the maze of programming languages.",
-      "Being a digital native, my gaze is always turned towards the future.However, I believe that just like in any other tide of change before it, in order for IT to thrive, we need a strong foundation of security.",
-      "I am now planning to take a CS degree with the intent to specialise in Networking and Cybersecurity."
+      "I am a Singapore-based security and software engineer. I have a strong interest in cybersecurity, software development, and technology in general.",
+      "I am currently still pursuing my undergraduate studies in Computer Science at the National University of Singapore (NUS).",
+      "I enjoy playing in CTFs, building software, and working out."
     ]
   }
 }

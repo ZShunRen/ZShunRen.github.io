@@ -23,7 +23,7 @@ npm run preview
 
 ## Write and update content
 
-- **Browser:** Pages CMS provides Posts, Profile, and Projects editors, with screenshot uploads. See [publishing and account setup](docs/publishing.md).
+- **Browser:** Pages CMS provides Posts, Profile, CTF Rankings, and Archived projects editors, with screenshot uploads. See [publishing and account setup](docs/publishing.md).
 - **Locally:** run `npm run new-post -- "Post title" optional-slug`, then edit the generated Markdown draft in `src/content/posts`.
 - **Images:** put uploads in `public/uploads` and reference `/uploads/filename.png` in Markdown.
 
@@ -38,7 +38,7 @@ Posts default to drafts. A post becomes public on the next build once `draft` is
 | `src/components/SceneryMotion.tsx` | React lifecycle, Motion scrolling, pause and preferences |
 | `src/lib/scenery` | Connected trail geometry and canvas weather |
 | `src/content/posts` | Markdown articles |
-| `src/data` | CMS-editable profile and project text |
+| `src/data` | CMS-editable profile, CTF rankings, and archived project text |
 | `src/styles/global.css` | Alpine design system and article typography |
 | `public` | Fonts, illustrations, photographs, screenshots, uploads |
 | `.pages.yml` | Browser editor fields and media mapping |

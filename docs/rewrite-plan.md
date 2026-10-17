@@ -21,7 +21,7 @@ Posts live in `src/content/posts/*.md`. The Astro content collection and `.pages
 
 The Markdown below frontmatter is the `body`. The post filename is its stable slug and route identifier. Titles can change without renaming the file.
 
-Profile copy lives in `src/data/profile.json` with exactly `name`, `subtitle`, `description`, `email`, `github`, `linkedin`, and `about.paragraphs`. Components should import this file rather than duplicate those values. Pages CMS exposes only these data fields and does not imply visual layout editing.
+Profile copy lives in `src/data/profile.json` with exactly `name`, `subtitle`, `description`, `email`, `github`, `linkedin`, `about.paragraphs`, `theme.title`, and `theme.paragraphs`. Components should import this file rather than duplicate those values. Pages CMS exposes only these data fields and does not imply visual layout editing.
 
 Existing project copy lives in `src/data/projects.json`. Its `spaceInvaders` and `spotifyTimeMachine` objects each contain exactly `title`, `description`, `repository`, and `paragraphs`. The homepage cards and corresponding detail routes should import these values rather than maintain separate copies. Gallery images, implementation metadata, and layout remain component-owned because they are outside the editable content contract.
 
@@ -93,3 +93,7 @@ External GitHub Pages and Pages CMS account setup, the first hosted CMS save, an
 - Existing navigation destinations and important public URLs either continue to work or have an explicit redirect.
 - The deployment workflow uploads and deploys the Astro artifact in the `github-pages` environment.
 - The first CMS save produces an understandable Git commit and starts the deployment workflow when it targets `main`.
+
+## Homepage content refresh
+
+The owner removed the homepage skills and project cards, initially requested work experience, and then replaced the work entries with CTF rankings. `src/data/ctf-rankings.json` stores the three supplied results and Pages CMS exposes their order, event, category, and placement. `CtfRankings.astro` retains the town scenery, and `Forest.astro` contains only a short trail transition. Current links use `#ctf-rankings`; former section anchors and historical project detail routes remain compatible.

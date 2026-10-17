@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useAnimationFrame, useScroll } from "motion/react";
+import { keepTrailClear } from "../lib/scenery/layout";
 import {
   applySceneryAtScroll,
   collectScenes,
@@ -58,10 +59,6 @@ function WeatherAnimation({ runtime, elapsed }: WeatherAnimationProps) {
       }
     }
 
-    runtime.home.style.setProperty(
-      "--wind-bend",
-      `${(0.5 + gust * 2.2) * Math.sin(elapsed.current * 0.9)}deg`,
-    );
     runtime.home.style.setProperty("--wind-drift", `${12 + gust * 25}px`);
   });
 
@@ -110,6 +107,7 @@ export default function SceneryMotion() {
       measureFrame = 0;
       nextRuntime.viewportHeight = window.innerHeight;
       measureTrail(nextRuntime.trail);
+      keepTrailClear(nextRuntime.trail);
       measureScenes(nextRuntime.scenes, window.scrollY);
       measureWeather(nextRuntime.weather);
       if (nextRuntime.reducedMotion) {
@@ -188,7 +186,6 @@ export default function SceneryMotion() {
       for (const scene of scenes) scene.element.classList.remove("scene-active");
       resetScenery(scenes, trail);
       clearWeather(nextRuntime.weather);
-      home.style.removeProperty("--wind-bend");
       home.style.removeProperty("--wind-drift");
     };
   }, []);
@@ -231,7 +228,6 @@ export default function SceneryMotion() {
     if (prefersReducedMotion) {
       resetScenery(runtime.scenes, runtime.trail);
       clearWeather(runtime.weather);
-      runtime.home.style.setProperty("--wind-bend", "0deg");
       runtime.home.style.setProperty("--wind-drift", "20px");
     } else if (running) {
       runtime.lastAppliedScrollY = scrollY.get();

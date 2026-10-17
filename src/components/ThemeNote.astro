@@ -1,0 +1,8 @@
+---
+import profile from "../data/profile.json";
+---
+
+<section class="theme-note" aria-labelledby="theme-note-title">
+  <h2 id="theme-note-title">{profile.theme.title}</h2>
+  {profile.theme.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+</section>

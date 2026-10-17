@@ -111,8 +111,45 @@ content:
             list: true
             required: true
 
+      - name: theme
+        label: Site theme story
+        type: object
+        fields:
+          - name: title
+            label: Heading
+            type: string
+            required: true
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+            required: true
+
+  - name: ctf-rankings
+    label: CTF Rankings
+    type: file
+    path: src/data/ctf-rankings.json
+    format: json
+    fields:
+      - name: rankings
+        label: Rankings
+        type: object
+        list: true
+        fields:
+          - name: event
+            label: Event and year
+            type: string
+            required: true
+          - name: category
+            label: Category (optional)
+            type: string
+          - name: placement
+            label: Placement
+            type: string
+            required: true
+
   - name: projects
-    label: Projects
+    label: Archived projects
     type: file
     path: src/data/projects.json
     format: json

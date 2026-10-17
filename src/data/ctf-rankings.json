@@ -1,0 +1,19 @@
+{
+  "rankings": [
+    {
+      "event": "SCC 2026",
+      "category": "Student category",
+      "placement": "5th place"
+    },
+    {
+      "event": "SANS Spark 2026",
+      "category": "",
+      "placement": "3rd place"
+    },
+    {
+      "event": "HTB University CTF 2024",
+      "category": "",
+      "placement": "3rd place"
+    }
+  ]
+}

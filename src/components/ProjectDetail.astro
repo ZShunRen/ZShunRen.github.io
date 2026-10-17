@@ -15,13 +15,13 @@ interface Props {
 const { title, description, repository, paragraphs, language, projectDate, images } = Astro.props;
 ---
 
-<BaseLayout {title} {description} current="projects">
+<BaseLayout {title} {description} current="ctf">
   <main id="main">
     <header class="page-intro">
       <div class="page-heading">
         <h1>{title}</h1>
-        <a class="text-link" href="/#project_header">
-          Back to projects
+        <a class="text-link" href="/#ctf-rankings">
+          Back to CTF rankings
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
             <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
           </svg>

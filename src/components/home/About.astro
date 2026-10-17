@@ -1,5 +1,6 @@
 ---
 import profile from "../../data/profile.json";
+import ThemeNote from "../ThemeNote.astro";
 
 const birthDate = new Date("2002-12-19");
 const today = new Date();
@@ -361,14 +362,6 @@ if (!hasHadBirthday) age--;
                   <dt>Age</dt>
                   <dd>{age}</dd>
                 </div>
-                <div>
-                  <dt>Email</dt>
-                  <dd>
-                    <a href={`mailto:${profile.email}`}
-                      >{profile.email}</a
-                    >
-                  </dd>
-                </div>
               </dl>
             </div>
           </div>
@@ -384,7 +377,7 @@ if (!hasHadBirthday) age--;
               />
               <div>
                 <h3>
-                  National University of Singapore (NUS) - School of Computing
+                  National University of Singapore (NUS)
                 </h3>
                 <p class="date">2023-2027</p>
                 <p>
@@ -395,5 +388,6 @@ if (!hasHadBirthday) age--;
               </div>
             </article>
           </div>
+          <ThemeNote />
         </div>
       </section>

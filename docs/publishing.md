@@ -10,7 +10,7 @@ These account and repository settings require the repository owner and have not 
 2. Open the repository on GitHub, then go to **Settings → Pages → Build and deployment** and choose **GitHub Actions** as the source.
 3. Visit [app.pagescms.org](https://app.pagescms.org), sign in with GitHub, and install the Pages CMS GitHub App for the account that owns `ZShunRen/ZShunRen.github.io`. Grant it access to this repository.
 4. Open `ZShunRen/ZShunRen.github.io` and the `main` branch in Pages CMS. It will read the committed `.pages.yml`; there is no credential to add to this repository.
-5. Confirm that **Posts**, **Profile**, and **Projects** appear. Create a draft test post, save it, and check that the resulting commit starts the **Deploy to GitHub Pages** workflow.
+5. Confirm that **Posts**, **Profile**, **CTF Rankings**, and **Archived projects** appear. Create a draft test post, save it, and check that the resulting commit starts the **Deploy to GitHub Pages** workflow.
 
 The workflow uses Node 24, installs locked dependencies with `npm ci`, checks templates and types, builds Astro, and uploads `dist` using the official GitHub Pages actions. Its `GITHUB_TOKEN` receives only repository-content read access plus the Pages and OpenID permissions required for deployment, scoped to the relevant jobs. The repository is a root user site, so its expected address is `https://zshunren.github.io/` and it does not need an Astro `base` path. No `CNAME` file was present when this setup was written; add `public/CNAME` and update Astro's `site` setting only if a custom domain is introduced later.
 
@@ -40,7 +40,7 @@ Saving in Pages CMS creates a Git commit. A commit to `main` triggers a build an
 
 Changing `draft` to `false` and saving makes the post eligible for the next production build. A future `date` must also be excluded everywhere production content is queried. GitHub Pages does not schedule builds, so a future-dated post becomes visible only after a build runs on or after that date, such as a later content commit or a manual workflow run.
 
-The **Profile** editor changes only the name, subtitle, description, contact links, and About paragraphs stored in `src/data/profile.json`. Those values feed both the homepage and About page. The **Projects** editor changes the title, description, repository link, and detail paragraphs stored in `src/data/projects.json` for the two existing projects. Layout, styling, navigation, media galleries, and components remain code changes.
+The **Profile** editor changes only the name, subtitle, description, contact links, About paragraphs, and the site theme story stored in `src/data/profile.json`. Those values feed the homepage, including its About section. There is no separate About page. The **CTF Rankings** editor manages the ordered rankings in `src/data/ctf-rankings.json`, including event and year, optional category, and placement. The list follows the order saved in the editor. The **Archived projects** editor changes the title, description, repository link, and detail paragraphs stored in `src/data/projects.json` for the two existing projects. Layout, styling, navigation, media galleries, and components remain code changes.
 
 ## Writing locally
 

@@ -1,15 +1,16 @@
 ---
 import profile from "../data/profile.json";
+import SocialLinks from "./SocialLinks.astro";
 
 interface Props {
-  current?: "home" | "about" | "projects" | "blog";
+  current?: "home" | "about" | "ctf" | "blog";
 }
 
 const { current } = Astro.props;
 const links = [
   { key: "home", label: "Home", href: "/#top-part" },
-  { key: "about", label: "About me", href: "/about/" },
-  { key: "projects", label: "Projects", href: "/#project_header" },
+  { key: "about", label: "About me", href: "/#about" },
+  { key: "ctf", label: "CTF Rankings", href: "/#ctf-rankings" },
   { key: "blog", label: "Blog", href: "/blog/" },
 ];
 ---
@@ -17,6 +18,7 @@ const links = [
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="navigation" aria-label="Main navigation">
+    <div class="nav-identity">
     <a class="wordmark" href="/" aria-label={`${profile.name} home`}>
       <svg viewBox="0 0 38 26" width="38" height="26" aria-hidden="true">
         <path
@@ -30,6 +32,8 @@ const links = [
       </svg>
       <span>{profile.name}</span>
     </a>
+      <SocialLinks />
+    </div>
     <div class="nav-links">
       {links.map(({ key, label, href }) => (
         <a {href} aria-current={current === key ? "page" : undefined}>{label}</a>

@@ -1,0 +1,157 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "periods": [
+        "May 2026 – Present",
+        "May 2025 – Aug 2025",
+        "May 2024 – Aug 2024"
+      ],
+      "sections": [
+        {
+          "id": "",
+          "top": 127.59375,
+          "height": 760
+        },
+        {
+          "id": "trail",
+          "top": 887.59375,
+          "height": 300
+        },
+        {
+          "id": "work-experience",
+          "top": 1187.59375,
+          "height": 1932.203125
+        },
+        {
+          "id": "about",
+          "top": 3119.796875,
+          "height": 2067.921875
+        },
+        {
+          "id": "contact",
+          "top": 5187.71875,
+          "height": 490
+        }
+      ],
+      "overflow": false,
+      "footerBottom": 5755.3125,
+      "height": 5755
+    },
+    {
+      "width": 390,
+      "periods": [
+        "May 2026 – Present",
+        "May 2025 – Aug 2025",
+        "May 2024 – Aug 2024"
+      ],
+      "sections": [
+        {
+          "id": "",
+          "top": 127.59375,
+          "height": 760
+        },
+        {
+          "id": "trail",
+          "top": 887.59375,
+          "height": 300
+        },
+        {
+          "id": "work-experience",
+          "top": 1187.59375,
+          "height": 1662.328125
+        },
+        {
+          "id": "about",
+          "top": 2849.921875,
+          "height": 1780.796875
+        },
+        {
+          "id": "contact",
+          "top": 4630.71875,
+          "height": 490
+        }
+      ],
+      "overflow": false,
+      "footerBottom": 5198.3125,
+      "height": 5198
+    },
+    {
+      "width": 768,
+      "periods": [
+        "May 2026 – Present",
+        "May 2025 – Aug 2025",
+        "May 2024 – Aug 2024"
+      ],
+      "sections": [
+        {
+          "id": "",
+          "top": 98,
+          "height": 820
+        },
+        {
+          "id": "trail",
+          "top": 918,
+          "height": 360
+        },
+        {
+          "id": "work-experience",
+          "top": 1278,
+          "height": 1400.703125
+        },
+        {
+          "id": "about",
+          "top": 2678.703125,
+          "height": 1432.375
+        },
+        {
+          "id": "contact",
+          "top": 4111.078125,
+          "height": 570
+        }
+      ],
+      "overflow": false,
+      "footerBottom": 4766.671875,
+      "height": 4767
+    },
+    {
+      "width": 1440,
+      "periods": [
+        "May 2026 – Present",
+        "May 2025 – Aug 2025",
+        "May 2024 – Aug 2024"
+      ],
+      "sections": [
+        {
+          "id": "",
+          "top": 98,
+          "height": 900
+        },
+        {
+          "id": "trail",
+          "top": 998,
+          "height": 360
+        },
+        {
+          "id": "work-experience",
+          "top": 1358,
+          "height": 1412.15625
+        },
+        {
+          "id": "about",
+          "top": 2770.15625,
+          "height": 1301.09375
+        },
+        {
+          "id": "contact",
+          "top": 4071.25,
+          "height": 570
+        }
+      ],
+      "overflow": false,
+      "footerBottom": 4726.84375,
+      "height": 4727
+    }
+  ],
+  "errors": []
+}

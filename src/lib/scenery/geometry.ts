@@ -44,7 +44,8 @@ export function collectScenes(home: HTMLElement): SceneryScene[] {
       const region = element.closest<HTMLElement>("section");
       if (!region) return null;
 
-      const layers = Array.from(element.querySelectorAll("[data-depth]"))
+      // Foreground trees and houses stay anchored to the shared ground.
+      const layers = Array.from(element.querySelectorAll(".terrain-layer[data-depth]"))
         .filter(isTransformable)
         .map((layer) => ({
           element: layer,
@@ -126,7 +127,7 @@ export function measureTrail(trail: TrailGeometry): void {
     add(rail, Math.max(top + 35, reading.top - mainBox.top - 35));
     add(rail + (mobile ? 0 : 28), top + region.height * 0.52);
     add(rail, Math.min(bottom - 35, reading.bottom - mainBox.top + 25));
-    add(section.id === "project_header" ? rail : mobile ? width * 0.23 : rail + 60, bottom);
+    add(section.id === "ctf-rankings" ? rail : mobile ? width * 0.23 : rail + 60, bottom);
   }
 
   let pathData = `M${nodes[0].x},${nodes[0].y}`;

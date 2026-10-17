@@ -1,0 +1,401 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 320,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 600,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 600,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 700,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 700,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/blog/",
+      "overflow": false,
+      "gap": 12,
+      "centerOffset": 0,
+      "icons": [
+        {
+          "label": "LinkedIn",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "GitHub",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        },
+        {
+          "label": "Email",
+          "size": 44,
+          "radius": "50%",
+          "iconSize": 22
+        }
+      ],
+      "nav": [
+        "Home",
+        "About me",
+        "Projects",
+        "Blog"
+      ]
+    }
+  ],
+  "errors": []
+}
