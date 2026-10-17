@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import BlogLandscape from "../components/BlogLandscape.astro";
+import BlogSnowfall from "../components/BlogSnowfall";
 
 interface Props {
   title: string;
@@ -15,5 +16,6 @@ const { title, description, image, article = false } = Astro.props;
   <main id="main" class={article ? "article-shell" : "blog-shell"}>
     <BlogLandscape />
     <slot />
+    <BlogSnowfall client:load />
   </main>
 </BaseLayout>

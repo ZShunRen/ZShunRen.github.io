@@ -24,7 +24,7 @@ const INTENSITY: Record<string, number> = {
   garden: 0.25,
 };
 
-export function collectWeather(home: HTMLElement, scenes: SceneryScene[]): WeatherLayer[] {
+export function collectWeather(home: HTMLElement, scenes: SceneryScene[] = []): WeatherLayer[] {
   return Array.from(home.querySelectorAll<HTMLCanvasElement>(".wind-snow")).flatMap(
     (canvas) => {
       const context = canvas.getContext("2d");
@@ -39,7 +39,7 @@ export function collectWeather(home: HTMLElement, scenes: SceneryScene[]): Weath
           scene,
           width: 0,
           height: 0,
-          intensity: INTENSITY[scene?.type ?? ""] ?? 0.3,
+          intensity: INTENSITY[canvas.dataset.weather ?? scene?.type ?? ""] ?? 0.3,
           particles: [],
         },
       ];
@@ -49,8 +49,8 @@ export function collectWeather(home: HTMLElement, scenes: SceneryScene[]): Weath
 
 export function measureWeather(layers: WeatherLayer[]): void {
   for (const layer of layers) {
-    const box = layer.canvas.parentElement?.getBoundingClientRect();
-    if (!box || box.width <= 0 || box.height <= 0) continue;
+    const box = layer.canvas.getBoundingClientRect();
+    if (box.width <= 0 || box.height <= 0) continue;
 
     layer.width = box.width;
     layer.height = box.height;

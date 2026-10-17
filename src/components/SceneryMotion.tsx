@@ -1,5 +1,8 @@
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { useAnimationFrame, useScroll } from "motion/react";
+import { useEffect, useRef, useState } from "react";
+import { useScroll } from "motion/react";
+import WeatherAnimation from "./WeatherAnimation";
+import useReducedMotion from "./useReducedMotion";
+import { updateMotionToggle } from "../lib/scenery/motionControl";
 import { keepTrailClear } from "../lib/scenery/layout";
 import {
   applySceneryAtScroll,
@@ -15,7 +18,6 @@ import {
 import {
   clearWeather,
   collectWeather,
-  drawWeather,
   measureWeather,
   type WeatherLayer,
 } from "../lib/scenery/weather";
@@ -23,7 +25,6 @@ import {
 interface SceneryRuntime {
   home: HTMLElement;
   toggle: HTMLButtonElement;
-  toggleLabel: HTMLElement | null;
   scenes: SceneryScene[];
   trail: TrailGeometry;
   weather: WeatherLayer[];
@@ -33,44 +34,8 @@ interface SceneryRuntime {
   reducedMotion: boolean;
 }
 
-interface WeatherAnimationProps {
-  runtime: SceneryRuntime;
-  elapsed: { current: number };
-}
-
-const reducedMotionQuery = "(prefers-reduced-motion: reduce)";
-const getReducedMotion = () => window.matchMedia(reducedMotionQuery).matches;
-const getServerReducedMotion = () => false;
-function subscribeReducedMotion(onChange: () => void) {
-  const query = window.matchMedia(reducedMotionQuery);
-  query.addEventListener("change", onChange);
-  return () => query.removeEventListener("change", onChange);
-}
-
-function WeatherAnimation({ runtime, elapsed }: WeatherAnimationProps) {
-  useAnimationFrame((_time, delta) => {
-    const deltaSeconds = Math.min(delta / 1000, 0.05);
-    elapsed.current += deltaSeconds;
-    const gust = Math.pow((Math.sin(elapsed.current * 0.68) + 1) / 2, 2) * 0.75 + 0.12;
-
-    for (const layer of runtime.weather) {
-      if (layer.scene?.visible) {
-        drawWeather(layer, deltaSeconds, elapsed.current, gust);
-      }
-    }
-
-    runtime.home.style.setProperty("--wind-drift", `${12 + gust * 25}px`);
-  });
-
-  return null;
-}
-
 export default function SceneryMotion() {
-  const prefersReducedMotion = useSyncExternalStore(
-    subscribeReducedMotion,
-    getReducedMotion,
-    getServerReducedMotion,
-  );
+  const prefersReducedMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const [runtime, setRuntime] = useState<SceneryRuntime | null>(null);
   const [enabled, setEnabled] = useState(true);
@@ -91,7 +56,6 @@ export default function SceneryMotion() {
     const nextRuntime: SceneryRuntime = {
       home,
       toggle,
-      toggleLabel: toggle.querySelector<HTMLElement>("span"),
       scenes,
       trail,
       weather: collectWeather(home, scenes),
@@ -212,18 +176,7 @@ export default function SceneryMotion() {
     runtime.motionActive = motionActive;
     runtime.reducedMotion = prefersReducedMotion;
     runtime.home.classList.toggle("motion-running", running);
-    runtime.toggle.disabled = prefersReducedMotion;
-    runtime.toggle.setAttribute("aria-pressed", String(motionActive));
-    if (runtime.toggleLabel) {
-      runtime.toggleLabel.textContent = prefersReducedMotion
-        ? "Motion reduced"
-        : enabled
-          ? "Motion on"
-          : "Motion off";
-    }
-    runtime.toggle.title = prefersReducedMotion
-      ? "Your reduced-motion preference is respected."
-      : "Toggle scenery movement";
+    updateMotionToggle(runtime.toggle, enabled, prefersReducedMotion);
 
     if (prefersReducedMotion) {
       resetScenery(runtime.scenes, runtime.trail);
@@ -251,5 +204,12 @@ export default function SceneryMotion() {
   const weatherRunning =
     runtime !== null && motionActive && documentVisible && visibleSceneCount > 0;
 
-  return weatherRunning ? <WeatherAnimation runtime={runtime} elapsed={elapsed} /> : null;
+  return weatherRunning ? (
+    <WeatherAnimation
+      layers={runtime.weather}
+      elapsed={elapsed}
+      isVisible={(layer) => Boolean(layer.scene?.visible)}
+      onWind={(gust) => runtime.home.style.setProperty("--wind-drift", `${12 + gust * 25}px`)}
+    />
+  ) : null;
 }

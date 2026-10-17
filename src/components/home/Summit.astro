@@ -1,20 +1,10 @@
 ---
 import profile from "../../data/profile.json";
+import MotionToggle from "../MotionToggle.astro";
 ---
 
       <section class="summit" aria-labelledby="name">
-        <button
-          class="motion-toggle"
-          type="button"
-          aria-label="Scenery animation"
-          aria-pressed="true"
-          hidden
-        >
-          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
-            <path d="M6 4v12M14 4v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-          <span>Motion on</span>
-        </button>
+        <MotionToggle />
         <div class="intro">
           <h1 id="name">{profile.name}<span class="name-dot">.</span></h1>
           <p>{profile.subtitle}</p>

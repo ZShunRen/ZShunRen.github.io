@@ -1491,6 +1491,12 @@ cite {
   pointer-events: none;
   overflow: hidden;
 }
+.blog-snow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+}
 .blog-peaks {
   position: absolute;
   inset: 0 0 auto;
