@@ -1559,6 +1559,14 @@ cite {
   border-radius: var(--radius);
   padding: 16px 64px 34px;
 }
+.post-group + .post-group {
+  border-top: 1px solid var(--line);
+}
+.post-group-heading {
+  margin: 34px 0 0;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  overflow-wrap: anywhere;
+}
 .post-row {
   padding: 42px 0;
   border-bottom: 1px solid var(--line);
@@ -1566,15 +1574,15 @@ cite {
 .post-row:last-child {
   border-bottom: 0;
 }
-.post-row h2 {
+.post-row :is(h2, h3) {
   margin: 10px 0 12px;
   font-size: clamp(1.25rem, 2vw, 1.65rem);
 }
-.post-row h2 a {
+.post-row :is(h2, h3) a {
   color: var(--ink);
   text-decoration: none;
 }
-.post-row h2 a:hover {
+.post-row :is(h2, h3) a:hover {
   text-decoration: underline;
 }
 .post-row > p {
@@ -1665,7 +1673,7 @@ cite {
   font-family: var(--body);
 }
 .article-intro h1,
-.post-row h2 {
+.post-row :is(h2, h3) {
   overflow-wrap: anywhere;
 }
 .prose h2 {

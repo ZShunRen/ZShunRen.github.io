@@ -1,10 +1,22 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { parseArgs } from "node:util";
 
-const [, , titleArg, slugArg] = process.argv;
+const { values, positionals } = parseArgs({
+  allowPositionals: true,
+  options: {
+    ctf: { type: "string" },
+    help: { type: "boolean", short: "h" },
+  },
+});
+const [titleArg, slugArg] = positionals;
+const ctfName = values.ctf?.trim();
 
-if (!titleArg) {
-  console.error('Usage: node scripts/new-post.mjs "Post title" [slug]');
+if (values.help) {
+  console.log('Usage: node scripts/new-post.mjs "Post title" [slug] [--ctf "CTF Name"]');
+} else if (!titleArg || positionals.length > 2 || (values.ctf !== undefined && !ctfName)) {
+  console.error('Usage: node scripts/new-post.mjs "Post title" [slug] [--ctf "CTF Name"]');
+  if (values.ctf !== undefined && !ctfName) console.error("CTF Name must not be empty.");
   process.exitCode = 1;
 } else {
   const slug = (slugArg ?? titleArg)
@@ -28,8 +40,8 @@ title: ${yamlTitle}
 description: ""
 date: ${date}
 tags: []
-category: work
-draft: true
+category: ${ctfName ? "ctf" : "work"}
+${ctfName ? `ctfName: ${JSON.stringify(ctfName)}\n` : ""}draft: true
 ---
 
 Start writing here.

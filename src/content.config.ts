@@ -10,6 +10,7 @@ const posts = defineCollection({
     date: z.coerce.date(),
     tags: z.array(z.string()).default([]),
     category: z.enum(["work", "ctf"]),
+    ctfName: z.string().trim().optional(),
     draft: z.boolean().default(true),
     cover: z.string().optional(),
     coverAlt: z.string().optional(),

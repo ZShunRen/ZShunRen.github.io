@@ -14,10 +14,10 @@ content:
       template: "{primary}.md"
       field: create
     view:
-      fields: [title, date, category, draft]
+      fields: [title, date, category, ctfName, draft]
       primary: title
       sort: [date, title]
-      search: [title, description, tags]
+      search: [title, description, tags, ctfName]
       default:
         sort: date
         order: desc
@@ -50,6 +50,11 @@ content:
               label: Work
             - name: ctf
               label: CTF
+      - name: ctfName
+        label: CTF Name
+        type: string
+        required: false
+        description: Event name and year, such as Example CTF 2026. CTF writeups with the same name are grouped together on the blog.
       - name: draft
         label: Draft
         type: boolean

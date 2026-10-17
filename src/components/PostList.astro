@@ -1,38 +1,37 @@
 ---
-import type { Post } from "../lib/posts";
-import { formatPostDate, postSlug, tagSlug } from "../lib/posts";
+import type { BlogEntry, Post } from "../lib/posts";
+import PostRow from "./PostRow.astro";
+import { formatPostDate } from "../lib/posts";
 
 interface Props {
-  posts: Post[];
+  posts?: Post[];
+  entries?: BlogEntry[];
   emptyMessage?: string;
+  headingLevel?: "h2" | "h3";
 }
 
 const {
-  posts,
+  posts = [],
+  entries = posts.map((post): BlogEntry => ({ kind: "post", post })),
   emptyMessage = "No published posts yet. New field notes will appear here.",
+  headingLevel: Heading = "h2",
 } = Astro.props;
 ---
 
 {
-  posts.length ? (
+  entries.length ? (
     <div class="post-list">
-      {posts.map((post) => (
+      {entries.map((entry) => entry.kind === "event" ? (
         <article class="post-row">
           <div class="post-meta">
-            <time datetime={post.data.date.toISOString()}>{formatPostDate(post.data.date)}</time>
-            <span>{post.data.category === "ctf" ? "CTF" : "Work"}</span>
+            <span>Latest writeup <time datetime={entry.event.date.toISOString()}>{formatPostDate(entry.event.date)}</time></span>
+            <span>CTF</span>
+            <span>{entry.event.posts.length} writeups</span>
           </div>
-          <h2><a href={`/blog/${postSlug(post)}/`}>{post.data.title}</a></h2>
-          <p>{post.data.description}</p>
-          {post.data.tags.length > 0 && (
-            <ul class="tag-list" aria-label="Tags">
-              {post.data.tags.map((tag) => (
-                <li><a href={`/blog/tags/${tagSlug(tag)}/`}>{tag}</a></li>
-              ))}
-            </ul>
-          )}
+          <Heading><a href={`/blog/${entry.event.slug}/`}>{entry.event.label}</a></Heading>
+          <p>Browse {entry.event.posts.length} challenge writeups from {entry.event.label}.</p>
         </article>
-      ))}
+      ) : <PostRow post={entry.post} headingLevel={Heading} />)}
     </div>
   ) : (
     <div class="empty-state">

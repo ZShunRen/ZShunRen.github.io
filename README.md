@@ -25,6 +25,7 @@ npm run preview
 
 - **Browser:** Pages CMS provides Posts, Profile, CTF Rankings, and Archived projects editors, with screenshot uploads. See [publishing and account setup](docs/publishing.md).
 - **Locally:** run `npm run new-post -- "Post title" optional-slug`, then edit the generated Markdown draft in `src/content/posts`.
+- **CTF writeups:** run `npm run new-post -- "Challenge title" optional-slug --ctf "Example CTF 2026"`. This sets `category: ctf` and `ctfName`; events with multiple published writeups appear as one blog entry linking to `/blog/<ctf-name>/`. Individual article URLs stay unchanged.
 - **Images:** put uploads in `public/uploads` and reference `/uploads/filename.png` in Markdown.
 
 Posts default to drafts. A post becomes public on the next build once `draft` is `false` and its publication date has arrived. Future dates do not schedule a deployment automatically.

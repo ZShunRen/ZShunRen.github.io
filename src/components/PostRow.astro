@@ -1,0 +1,21 @@
+---
+import type { Post } from "../lib/posts";
+import { formatPostDate, postSlug, tagSlug } from "../lib/posts";
+interface Props { post: Post; headingLevel?: "h2" | "h3"; }
+const { post, headingLevel: Heading = "h2" } = Astro.props;
+---
+<article class="post-row">
+  <div class="post-meta">
+    <time datetime={post.data.date.toISOString()}>{formatPostDate(post.data.date)}</time>
+    <span>{post.data.category === "ctf" ? "CTF" : "Work"}</span>
+  </div>
+  <Heading><a href={`/blog/${postSlug(post)}/`}>{post.data.title}</a></Heading>
+  <p>{post.data.description}</p>
+  {post.data.tags.length > 0 && (
+    <ul class="tag-list" aria-label="Tags">
+      {post.data.tags.map((tag) => (
+        <li><a href={`/blog/tags/${tagSlug(tag)}/`}>{tag}</a></li>
+      ))}
+    </ul>
+  )}
+</article>

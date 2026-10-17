@@ -1,9 +1,10 @@
 ---
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import PostList from "../../components/PostList.astro";
-import { getPublishedPosts } from "../../lib/posts";
+import { getPublishedPosts, getBlogEntries } from "../../lib/posts";
 
 const posts = await getPublishedPosts();
+const entries = getBlogEntries(posts);
 ---
 
 <BlogLayout
@@ -17,6 +18,6 @@ const posts = await getPublishedPosts();
       </div>
     </header>
     <section class="blog-index inner-content" aria-label="Published posts">
-      <PostList {posts} />
+      <PostList {entries} />
     </section>
 </BlogLayout>

@@ -61,6 +61,18 @@ node scripts/new-post.mjs "Post title" optional-slug
 
 The command refuses to overwrite an existing post. Review its description, category, tags, and body before committing it. Keep the generated slug once links to the post may exist.
 
+For a CTF writeup, supply the event name (including the year to distinguish editions):
+
+```bash
+npm run new-post -- "The Public Counter" example-ctf-2026-public-counter --ctf "Example CTF 2026"
+```
+
+This creates a draft with `category: ctf` and `ctfName: "Example CTF 2026"`. For existing writeups, add `ctfName` to the frontmatter, or fill in **CTF Name** in Pages CMS. The blog matches CTF names ignoring case and surrounding whitespace. Events with two or more published writeups appear as one entry showing the event name, writeup count, and latest publication date. Single writeups, unnamed CTF posts, and work posts link directly to their articles. All entries are ordered newest first.
+
+Every named CTF also gets an event page, such as `/blog/example-ctf-2026/`, using the same blog layout and listing its writeups newest first. Article CTF names link back to this page. Event pages exist even with one published writeup, so the event URL stays available as more are added. Drafts and future posts do not count toward grouping or appear on event pages. Individual post URLs stay based on their filenames; tag archives continue listing individual articles.
+
+Event URLs are generated from lowercase, hyphenated CTF names. Include the year to distinguish editions, and keep the event name consistent once linked publicly. Names without ASCII letters or numbers use a deterministic encoded fallback. A build fails with an explanatory error if event names produce the same URL or collide with an article or reserved route (`tags` or `index`); rename the conflicting event or post to resolve it.
+
 Before pushing, run `npm run check` and `npm run build`. Use `npm run preview` to inspect the production output, including draft and future-date filtering. Commit the generated `package-lock.json`; the deployment action uses the lockfile to select npm and install the exact dependency tree.
 
 The development site also hides drafts and future-dated posts. To inspect a complete article locally, temporarily set its `draft` field to `false` and its date to today or earlier. These local edits do not publish anything until pushed. Restore the draft flag before committing if the post is not ready. The hosted CMS editor preview is separate from a preview of the full website; automatic draft preview deployments are not configured.
